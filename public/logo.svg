@@ -1,0 +1,204 @@
+<svg viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+  <g>
+  <!-- Long rays (r=30 dots) with up/down animation -->
+  <g class="ray-long" style="animation-delay: 0s">
+    <line x1="600" y1="600" x2="600.00" y2="330.00" stroke="#072b6e" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="600.00" cy="330.00" r="30" fill="#072b6e"/>
+  </g>
+  <g class="ray-long" style="animation-delay: 0.2s">
+    <line x1="600" y1="600" x2="735.00" y2="366.17" stroke="#072b6e" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="735.00" cy="366.17" r="30" fill="#072b6e"/>
+  </g>
+  <g class="ray-long" style="animation-delay: 0.4s">
+    <line x1="600" y1="600" x2="833.83" y2="465.00" stroke="#072b6e" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="833.83" cy="465.00" r="30" fill="#072b6e"/>
+  </g>
+  <g class="ray-long" style="animation-delay: 0.6s">
+    <line x1="600" y1="600" x2="870.00" y2="600.00" stroke="#072b6e" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="870.00" cy="600.00" r="30" fill="#072b6e"/>
+  </g>
+  <g class="ray-long" style="animation-delay: 0.8s">
+    <line x1="600" y1="600" x2="833.83" y2="735.00" stroke="#072b6e" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="833.83" cy="735.00" r="30" fill="#072b6e"/>
+  </g>
+  <g class="ray-long" style="animation-delay: 1.0s">
+    <line x1="600" y1="600" x2="735.00" y2="833.83" stroke="#072b6e" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="735.00" cy="833.83" r="30" fill="#072b6e"/>
+  </g>
+  <g class="ray-long" style="animation-delay: 1.2s">
+    <line x1="600" y1="600" x2="600.00" y2="870.00" stroke="#072b6e" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="600.00" cy="870.00" r="30" fill="#072b6e"/>
+  </g>
+  <g class="ray-long" style="animation-delay: 1.4s">
+    <line x1="600" y1="600" x2="465.00" y2="833.83" stroke="#072b6e" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="465.00" cy="833.83" r="30" fill="#072b6e"/>
+  </g>
+  <g class="ray-long" style="animation-delay: 1.6s">
+    <line x1="600" y1="600" x2="366.17" y2="735.00" stroke="#072b6e" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="366.17" cy="735.00" r="30" fill="#072b6e"/>
+  </g>
+  <g class="ray-long" style="animation-delay: 1.8s">
+    <line x1="600" y1="600" x2="330.00" y2="600.00" stroke="#072b6e" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="330.00" cy="600.00" r="30" fill="#072b6e"/>
+  </g>
+  <g class="ray-long" style="animation-delay: 2.0s">
+    <line x1="600" y1="600" x2="366.17" y2="465.00" stroke="#072b6e" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="366.17" cy="465.00" r="30" fill="#072b6e"/>
+  </g>
+  <g class="ray-long" style="animation-delay: 2.2s">
+    <line x1="600" y1="600" x2="465.00" y2="366.17" stroke="#072b6e" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="465.00" cy="366.17" r="30" fill="#072b6e"/>
+  </g>
+
+  <!-- Medium rays (r=17 dots) with up/down animation -->
+  <g class="ray-medium" style="animation-delay: 0.1s">
+    <line x1="600" y1="600" x2="642.71" y2="440.62" stroke="#072b6e" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="642.71" cy="440.62" r="17" fill="#072b6e"/>
+  </g>
+  <g class="ray-medium" style="animation-delay: 0.3s">
+    <line x1="600" y1="600" x2="716.67" y2="483.33" stroke="#072b6e" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="716.67" cy="483.33" r="17" fill="#072b6e"/>
+  </g>
+  <g class="ray-medium" style="animation-delay: 0.5s">
+    <line x1="600" y1="600" x2="759.38" y2="557.29" stroke="#072b6e" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="759.38" cy="557.29" r="17" fill="#072b6e"/>
+  </g>
+  <g class="ray-medium" style="animation-delay: 0.7s">
+    <line x1="600" y1="600" x2="759.38" y2="642.71" stroke="#072b6e" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="759.38" cy="642.71" r="17" fill="#072b6e"/>
+  </g>
+  <g class="ray-medium" style="animation-delay: 0.9s">
+    <line x1="600" y1="600" x2="716.67" y2="716.67" stroke="#072b6e" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="716.67" cy="716.67" r="17" fill="#072b6e"/>
+  </g>
+  <g class="ray-medium" style="animation-delay: 1.1s">
+    <line x1="600" y1="600" x2="642.71" y2="759.38" stroke="#072b6e" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="642.71" cy="759.38" r="17" fill="#072b6e"/>
+  </g>
+  <g class="ray-medium" style="animation-delay: 1.3s">
+    <line x1="600" y1="600" x2="557.29" y2="759.38" stroke="#072b6e" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="557.29" cy="759.38" r="17" fill="#072b6e"/>
+  </g>
+  <g class="ray-medium" style="animation-delay: 1.5s">
+    <line x1="600" y1="600" x2="483.33" y2="716.67" stroke="#072b6e" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="483.33" cy="716.67" r="17" fill="#072b6e"/>
+  </g>
+  <g class="ray-medium" style="animation-delay: 1.7s">
+    <line x1="600" y1="600" x2="440.62" y2="642.71" stroke="#072b6e" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="440.62" cy="642.71" r="17" fill="#072b6e"/>
+  </g>
+  <g class="ray-medium" style="animation-delay: 1.9s">
+    <line x1="600" y1="600" x2="440.62" y2="557.29" stroke="#072b6e" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="440.62" cy="557.29" r="17" fill="#072b6e"/>
+  </g>
+  <g class="ray-medium" style="animation-delay: 2.1s">
+    <line x1="600" y1="600" x2="483.33" y2="483.33" stroke="#072b6e" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="483.33" cy="483.33" r="17" fill="#072b6e"/>
+  </g>
+  <g class="ray-medium" style="animation-delay: 2.3s">
+    <line x1="600" y1="600" x2="557.29" y2="440.62" stroke="#072b6e" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="557.29" cy="440.62" r="17" fill="#072b6e"/>
+  </g>
+
+  <!-- Short rays (r=9 dots) with up/down animation -->
+  <g class="ray-short" style="animation-delay: 0.15s">
+    <line x1="600" y1="600" x2="613.71" y2="495.90" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="613.71" cy="495.90" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 0.25s">
+    <line x1="600" y1="600" x2="640.18" y2="502.99" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="640.18" cy="502.99" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 0.35s">
+    <line x1="600" y1="600" x2="663.92" y2="516.70" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="663.92" cy="516.70" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 0.45s">
+    <line x1="600" y1="600" x2="683.30" y2="536.08" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="683.30" cy="536.08" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 0.55s">
+    <line x1="600" y1="600" x2="697.01" y2="559.82" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="697.01" cy="559.82" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 0.65s">
+    <line x1="600" y1="600" x2="704.10" y2="586.29" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="704.10" cy="586.29" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 0.75s">
+    <line x1="600" y1="600" x2="704.10" y2="613.71" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="704.10" cy="613.71" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 0.85s">
+    <line x1="600" y1="600" x2="697.01" y2="640.18" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="697.01" cy="640.18" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 0.95s">
+    <line x1="600" y1="600" x2="683.30" y2="663.92" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="683.30" cy="663.92" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 1.05s">
+    <line x1="600" y1="600" x2="663.92" y2="683.30" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="663.92" cy="683.30" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 1.15s">
+    <line x1="600" y1="600" x2="640.18" y2="697.01" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="640.18" cy="697.01" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 1.25s">
+    <line x1="600" y1="600" x2="613.71" y2="704.10" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="613.71" cy="704.10" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 1.35s">
+    <line x1="600" y1="600" x2="586.29" y2="704.10" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="586.29" cy="704.10" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 1.45s">
+    <line x1="600" y1="600" x2="559.82" y2="697.01" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="559.82" cy="697.01" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 1.55s">
+    <line x1="600" y1="600" x2="536.08" y2="683.30" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="536.08" cy="683.30" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 1.65s">
+    <line x1="600" y1="600" x2="516.70" y2="663.92" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="516.70" cy="663.92" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 1.75s">
+    <line x1="600" y1="600" x2="502.99" y2="640.18" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="502.99" cy="640.18" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 1.85s">
+    <line x1="600" y1="600" x2="495.90" y2="613.71" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="495.90" cy="613.71" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 1.95s">
+    <line x1="600" y1="600" x2="495.90" y2="586.29" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="495.90" cy="586.29" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 2.05s">
+    <line x1="600" y1="600" x2="502.99" y2="559.82" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="502.99" cy="559.82" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 2.15s">
+    <line x1="600" y1="600" x2="516.70" y2="536.08" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="516.70" cy="536.08" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 2.25s">
+    <line x1="600" y1="600" x2="536.08" y2="516.70" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="536.08" cy="516.70" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 2.35s">
+    <line x1="600" y1="600" x2="559.82" y2="502.99" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="559.82" cy="502.99" r="9" fill="#072b6e"/>
+  </g>
+  <g class="ray-short" style="animation-delay: 2.45s">
+    <line x1="600" y1="600" x2="586.29" y2="495.90" stroke="#072b6e" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="586.29" cy="495.90" r="9" fill="#072b6e"/>
+  </g>
+
+  <!-- Center circle -->
+  <circle cx="600" cy="600" r="58" fill="#072b6e"/>
+  </g>
+</svg>
