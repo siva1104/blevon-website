@@ -52,7 +52,7 @@ export default function Hero() {
               className="inline-flex items-center gap-2 rounded-full border border-slate-200/80 bg-white px-4 py-1.5 text-[14px] font-semibold text-slate-700 shadow-sm mb-3 tracking-[0.08em] uppercase"
             >
               <Star className="h-3.5 w-3.5 fill-primary text-primary" />
-              <span>Digital Solutions That Drive Growth</span>
+              <span>Websites That Build Trust. Generate Leads. Grow Your Business.</span>
             </motion.div>
 
             {/* Main Heading */}
