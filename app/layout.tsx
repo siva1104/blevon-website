@@ -10,7 +10,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Blevon | Premium Digital Creative Agency",
+  title: "Blevon | Modern Web Design & Development",
   description: "We design and develop modern, high-performance web applications, landing pages, and custom digital products that elevate your brand.",
   keywords: ["digital agency", "web development", "UI/UX design", "Next.js", "premium websites"],
   openGraph: {
