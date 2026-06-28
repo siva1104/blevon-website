@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -22,16 +23,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" className={`scroll-smooth ${manrope.variable}`} suppressHydrationWarning>
-      <body
-        className="font-manrope antialiased bg-white text-slate-900"
-      >
+    <html lang="en">
+      <body>
         {children}
       </body>
+
+      <GoogleAnalytics gaId="G-QLNTGQW6BJ" />
     </html>
   );
 }
