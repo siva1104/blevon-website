@@ -22,12 +22,12 @@ const homeFaqs = [
   {
     num: "04",
     q: "How do I start a project with Blevon?",
-    a: "Send us an inquiry through the Contact page with some details about what you want to build. You can also book a call if you'd prefer to discuss the project directly.",
+    a: "Write to us at contact@blevon.in or reach out through our Contact page with details about what you want to build.",
   },
   {
     num: "05",
     q: "How can I contact Blevon?",
-    a: "You can contact us by email or WhatsApp, or use the project inquiry form on the Contact page.",
+    a: "You can write to us at contact@blevon.in, call us directly, or message us on WhatsApp at +91 9491229471.",
   },
 ];
 
