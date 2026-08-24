@@ -41,45 +41,45 @@ export function FaqSection() {
   return (
     <section
       id="faq"
-      className="relative w-full py-16 sm:py-20 md:py-24"
+      className="relative w-full py-12 sm:py-16 md:py-18"
     >
       <div className="global-container">
-        <div className="mx-auto max-w-3xl lg:max-w-[840px]">
+        <div className="mx-auto max-w-2xl lg:max-w-[760px]">
         {/* Section Header */}
-        <div className="mb-12 text-center sm:mb-16">
-          <span className="mb-3 inline-block text-sm font-semibold tracking-[0.24em] text-[#2563EB] uppercase sm:text-base">
+        <div className="mb-8 text-center sm:mb-10">
+          <span className="mb-2 inline-block text-xs font-semibold tracking-[0.2em] text-[#2563EB] uppercase">
             FAQ
           </span>
-          <h2 className="text-4xl font-bold tracking-tight text-[#101828] sm:text-5xl md:text-6xl lg:text-7xl leading-[1.15]">
+          <h2 className="text-xl font-bold tracking-tight text-[#101828] sm:text-2xl md:text-3xl lg:text-[34px] leading-[1.18]">
             Questions, answered.
           </h2>
         </div>
 
         {/* Clean Accordion List */}
-        <div className="space-y-4">
+        <div className="space-y-2.5">
           {homeFaqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
               <div
                 key={faq.num}
-                className="overflow-hidden rounded-2xl border border-[#E4E7EC] bg-white shadow-xs transition-colors duration-200 hover:border-blue-300"
+                className="overflow-hidden rounded-xl border border-[#E4E7EC] bg-white shadow-xs transition-colors duration-200 hover:border-blue-300"
               >
                 <button
                   type="button"
                   onClick={() => toggleFaq(index)}
-                  className="flex w-full items-center justify-between gap-4 p-6 sm:p-7 text-left focus:outline-none"
+                  className="flex w-full items-center justify-between gap-3 p-3.5 sm:p-4 text-left focus:outline-none"
                   aria-expanded={isOpen}
                 >
-                  <div className="flex items-baseline gap-4 sm:gap-6">
-                    <span className="font-mono text-sm font-bold tracking-wider text-[#2563EB] sm:text-base">
+                  <div className="flex items-baseline gap-2.5 sm:gap-3">
+                    <span className="font-mono text-xs font-bold tracking-wider text-[#2563EB]">
                       {faq.num}
                     </span>
-                    <span className="text-xl font-bold text-[#101828] sm:text-2xl">
+                    <span className="text-sm font-bold text-[#101828] sm:text-base">
                       {faq.q}
                     </span>
                   </div>
-                  <div className="flex size-9 shrink-0 items-center justify-center rounded-full border border-[#E4E7EC] bg-[#F7F8F6] text-[#0E2A6D] transition-transform duration-300">
-                    <span className={`text-lg font-semibold transition-transform duration-300 ${isOpen ? "rotate-45" : ""}`}>
+                  <div className="flex size-6 sm:size-7 shrink-0 items-center justify-center rounded-full border border-[#E4E7EC] bg-[#F7F8F6] text-[#0E2A6D] transition-transform duration-300">
+                    <span className={`text-sm font-semibold transition-transform duration-300 ${isOpen ? "rotate-45" : ""}`}>
                       +
                     </span>
                   </div>
@@ -93,8 +93,8 @@ export function FaqSection() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
                     >
-                      <div className="border-t border-[#E4E7EC] px-6 sm:px-7 pb-6 pt-4 sm:pb-7">
-                        <p className="pl-8 sm:pl-10 text-lg text-[#667085] leading-relaxed sm:text-xl">
+                      <div className="border-t border-[#E4E7EC] px-3.5 sm:px-4 pb-3.5 pt-2.5 sm:pb-4">
+                        <p className="pl-5 sm:pl-6 text-xs text-[#667085] leading-relaxed sm:text-sm">
                           {faq.a}
                         </p>
                       </div>

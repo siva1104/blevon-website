@@ -26,10 +26,10 @@ export function Layout438() {
   return (
     <section
       id="approach"
-      className="relative w-full py-16 sm:py-20 md:py-24"
+      className="relative w-full py-12 sm:py-16 md:py-18"
     >
       <div className="global-container">
-        <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-[0.85fr_1.35fr] lg:grid-cols-[400px_1fr] xl:grid-cols-[460px_1fr] lg:gap-14 xl:gap-20">
+        <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-[0.85fr_1.35fr] lg:grid-cols-[340px_1fr] xl:grid-cols-[380px_1fr] lg:gap-10 xl:gap-14">
           {/* LEFT: Single Cinematic Storytelling Image (Wireframe Sketch 4:5 ratio) */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -38,11 +38,11 @@ export function Layout438() {
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             className="order-last md:order-first w-full"
           >
-            <div className="overflow-hidden rounded-2xl sm:rounded-3xl border border-[#E4E7EC] bg-white p-1.5 sm:p-2 shadow-sm">
+            <div className="overflow-hidden rounded-2xl border border-[#E4E7EC] bg-white p-1.5 sm:p-2 shadow-xs">
               <img
                 src={approachDesignImg}
                 alt="UI and UX design thinking, wireframing and digital planning"
-                className="aspect-[4/5] w-full rounded-xl sm:rounded-2xl object-cover transition-transform duration-700 hover:scale-[1.03]"
+                className="aspect-[4/5] w-full rounded-xl object-cover transition-transform duration-700 hover:scale-[1.03]"
                 loading="lazy"
               />
             </div>
@@ -51,28 +51,28 @@ export function Layout438() {
           {/* RIGHT: Approach Content & 3-Step Continuous Process */}
           <div className="flex flex-col justify-center">
             {/* Eyebrow */}
-            <span className="mb-2.5 inline-block text-sm font-semibold tracking-[0.24em] text-[#2563EB] uppercase sm:text-base">
+            <span className="mb-2 inline-block text-xs font-semibold tracking-[0.2em] text-[#2563EB] uppercase">
               APPROACH
             </span>
 
             {/* Headline */}
-            <h2 className="text-3xl font-bold tracking-tight text-[#101828] sm:text-4xl lg:text-5xl leading-[1.18]">
+            <h2 className="text-xl font-bold tracking-tight text-[#101828] sm:text-2xl lg:text-3xl leading-[1.18]">
               We understand first.
-              <span className="block sm:inline sm:ml-2 text-[#101828]">
+              <span className="block sm:inline sm:ml-1.5 text-[#101828]">
                 Then we build with purpose.
               </span>
             </h2>
 
             {/* Short Description */}
-            <p className="mt-3.5 text-lg text-[#667085] sm:text-xl leading-relaxed max-w-3xl">
+            <p className="mt-2.5 text-xs text-[#667085] sm:text-sm leading-relaxed max-w-xl">
               Every project starts with understanding your business, your users,
               and what needs to work. We turn that understanding into a clear,
               useful digital product.
             </p>
 
             {/* Horizontal Continuous 3-Step Process */}
-            <div className="mt-8 border-t border-[#E4E7EC] pt-6 sm:mt-10 sm:pt-8">
-              <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-6 lg:gap-8">
+            <div className="mt-5 border-t border-[#E4E7EC] pt-4 sm:mt-6 sm:pt-5">
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-4 lg:gap-5">
                 {steps.map((step, idx) => (
                   <motion.div
                     key={step.num}
@@ -86,13 +86,13 @@ export function Layout438() {
                     }}
                     className="flex flex-col"
                   >
-                    <span className="text-sm font-bold tracking-wider text-[#2563EB] sm:text-base">
+                    <span className="text-xs font-bold tracking-wider text-[#2563EB]">
                       {step.num}
                     </span>
-                    <h3 className="mt-1.5 text-xl font-bold text-[#101828] sm:text-2xl">
+                    <h3 className="mt-1 text-sm font-bold text-[#101828] sm:text-base">
                       {step.title}
                     </h3>
-                    <p className="mt-2 text-base text-[#667085] leading-relaxed">
+                    <p className="mt-1 text-xs text-[#667085] leading-relaxed">
                       {step.desc}
                     </p>
                   </motion.div>

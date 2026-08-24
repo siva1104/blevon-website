@@ -32,25 +32,14 @@ export default function Page() {
 
       {/* MAIN CONTENT */}
       <main>
-        {/* 02 — HERO */}
-        <div className="relative w-full overflow-hidden -mt-24 sm:-mt-28 pt-24 sm:pt-28 bg-[#F7F8F6]">
-          {/* Bottom-Left Corner Ambient Glow */}
+        {/* 02 — HERO (Full initial viewport height) */}
+        <div className="relative w-full min-h-screen overflow-hidden bg-[#F7F8F6] flex flex-col justify-center">
+          {/* Seamless full-height upward blue shade gradient: thickest at bottom, smoothly fading upward into white */}
           <div
-            className="pointer-events-none absolute bottom-0 left-0 w-[55vw] max-w-[720px] h-[460px] opacity-70"
+            className="pointer-events-none absolute inset-0 w-full h-full"
             style={{
               background:
-                "radial-gradient(ellipse at 0% 100%, rgba(37, 99, 235, 0.16) 0%, rgba(96, 165, 250, 0.08) 38%, transparent 70%)",
-              filter: "blur(24px)",
-            }}
-          />
-
-          {/* Bottom-Right Corner Ambient Glow */}
-          <div
-            className="pointer-events-none absolute bottom-0 right-0 w-[55vw] max-w-[720px] h-[460px] opacity-70"
-            style={{
-              background:
-                "radial-gradient(ellipse at 100% 100%, rgba(37, 99, 235, 0.16) 0%, rgba(96, 165, 250, 0.08) 38%, transparent 70%)",
-              filter: "blur(24px)",
+                "linear-gradient(to top, rgba(37, 99, 235, 0.18) 0%, rgba(37, 99, 235, 0.09) 28%, rgba(96, 165, 250, 0.03) 60%, rgba(247, 248, 246, 0) 90%)",
             }}
           />
 

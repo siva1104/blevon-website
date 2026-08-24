@@ -40,36 +40,36 @@ export function Portfolio23() {
   return (
     <section
       id="work"
-      className="relative w-full py-16 sm:py-20 md:py-24"
+      className="relative w-full py-12 sm:py-16 md:py-18"
     >
       <div className="global-container">
         {/* Section Header: Centered with Controlled Width */}
-        <header className="mx-auto mb-10 max-w-3xl text-center sm:mb-14">
-          <span className="mb-3 inline-block text-sm font-semibold tracking-[0.24em] text-[#2563EB] uppercase sm:text-base">
+        <header className="mx-auto mb-7 max-w-xl text-center sm:mb-9">
+          <span className="mb-2 inline-block text-xs font-semibold tracking-[0.2em] text-[#2563EB] uppercase">
             WORK
           </span>
-          <h2 className="mb-4 text-4xl font-bold tracking-tight text-[#101828] sm:text-5xl md:text-6xl lg:text-7xl leading-[1.15]">
+          <h2 className="mb-2.5 text-xl font-bold tracking-tight text-[#101828] sm:text-2xl md:text-3xl lg:text-[34px] leading-[1.18]">
             Selected work.
           </h2>
-          <p className="mx-auto max-w-[620px] text-lg text-[#667085] sm:text-xl lg:text-2xl leading-relaxed">
+          <p className="mx-auto max-w-[480px] text-sm text-[#667085] sm:text-[15px] leading-relaxed">
             A selection of digital experiences we've built for businesses.
           </p>
         </header>
 
         {/* Showcase Area with Optional Navigation Arrows */}
-        <div className="relative mx-auto flex w-full items-center justify-center gap-3 sm:gap-6 md:gap-8 lg:gap-10">
+        <div className="relative mx-auto flex w-full items-center justify-center gap-3 sm:gap-5 md:gap-7">
           {/* Left Navigation Arrow (Desktop) */}
           {hasMultipleProjects && (
             <button
               type="button"
               onClick={handlePrev}
               aria-label="Previous project"
-              className="hidden sm:flex size-11 sm:size-12 shrink-0 items-center justify-center rounded-full border border-[#E4E7EC] bg-white text-[#0E2A6D] shadow-xs transition-all duration-200 hover:border-blue-300 hover:bg-[#EAF1FF] hover:text-[#2563EB] hover:scale-105 active:scale-95 focus:outline-none"
+              className="hidden sm:flex size-10 sm:size-11 shrink-0 items-center justify-center rounded-full border border-[#E4E7EC] bg-white text-[#0E2A6D] shadow-xs transition-all duration-200 hover:border-blue-300 hover:bg-[#EAF1FF] hover:text-[#2563EB] hover:scale-105 active:scale-95 focus:outline-none"
             >
               <svg
                 viewBox="0 0 24 24"
-                width="20"
-                height="20"
+                width="18"
+                height="18"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
@@ -83,7 +83,7 @@ export function Portfolio23() {
           )}
 
           {/* Active Featured Project Card */}
-          <div className="w-full max-w-xl md:max-w-2xl lg:max-w-[700px]">
+          <div className="w-full max-w-lg md:max-w-xl lg:max-w-[660px]">
             <AnimatePresence mode="wait">
               <motion.article
                 key={currentProject.id}
@@ -91,42 +91,42 @@ export function Portfolio23() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                className="group grid grid-cols-1 items-center gap-6 rounded-2xl border border-[#E4E7EC] bg-white p-5 sm:p-7 md:grid-cols-[1.1fr_0.9fr] lg:gap-7 shadow-xs transition-all duration-300 hover:border-blue-300 hover:shadow-md"
+                className="group grid grid-cols-1 items-center gap-5 rounded-2xl border border-[#E4E7EC] bg-white p-5 sm:p-6 md:grid-cols-[1.1fr_0.9fr] lg:gap-6 shadow-xs transition-all duration-300 hover:border-blue-300 hover:shadow-md"
               >
                 {/* Left Column: Project Details */}
                 <div className="flex flex-col justify-between h-full">
                   <div>
                     {/* 1. Project Number */}
-                    <span className="text-xs font-bold tracking-[0.2em] text-[#2563EB] uppercase sm:text-sm">
+                    <span className="text-xs font-bold tracking-[0.18em] text-[#2563EB] uppercase">
                       {currentProject.num}
                     </span>
 
                     {/* 2. Project Title */}
-                    <h3 className="mt-1.5 text-xl font-bold tracking-tight text-[#101828] sm:text-2xl leading-[1.2] uppercase">
+                    <h3 className="mt-1 text-base font-bold tracking-tight text-[#101828] sm:text-lg leading-[1.2] uppercase">
                       {currentProject.name}
                     </h3>
 
                     {/* 3. Category Badge */}
-                    <div className="mt-2">
-                      <span className="inline-block rounded-full border border-[#E4E7EC] bg-[#EAF1FF] px-3 py-0.5 text-xs font-semibold text-[#2563EB]">
+                    <div className="mt-1.5">
+                      <span className="inline-block rounded-full border border-[#E4E7EC] bg-[#EAF1FF] px-2.5 py-0.5 text-xs font-semibold text-[#2563EB]">
                         {currentProject.category}
                       </span>
                     </div>
 
                     {/* 4. Description */}
-                    <p className="mt-3.5 text-sm text-[#667085] leading-relaxed sm:text-base">
+                    <p className="mt-2.5 text-xs text-[#667085] leading-relaxed sm:text-sm">
                       {currentProject.description}
                     </p>
                   </div>
 
                   {/* 5. View Project Link */}
-                  <div className="mt-5 pt-4 border-t border-[#E4E7EC]">
+                  <div className="mt-4 pt-3 border-t border-[#E4E7EC]">
                     <a
                       href={currentProject.link || "/case-study"}
-                      className="group/link inline-flex items-center gap-2 text-sm sm:text-base font-semibold text-[#0E2A6D] transition-colors duration-200 hover:text-[#2563EB]"
+                      className="group/link inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#0E2A6D] transition-colors duration-200 hover:text-[#2563EB]"
                     >
                       <span>{currentProject.linkText || "View Project"}</span>
-                      <span className="text-[#2563EB] transition-transform duration-300 group-hover/link:translate-x-1.5">
+                      <span className="text-[#2563EB] transition-transform duration-300 group-hover/link:translate-x-1">
                         →
                       </span>
                     </a>
@@ -142,7 +142,7 @@ export function Portfolio23() {
                     <img
                       src={currentProject.logo}
                       alt={`${currentProject.name} client logo`}
-                      className="max-h-14 sm:max-h-16 w-auto max-w-[80%] object-contain"
+                      className="max-h-12 sm:max-h-14 w-auto max-w-[80%] object-contain"
                       loading="lazy"
                     />
                   </a>
@@ -157,12 +157,12 @@ export function Portfolio23() {
               type="button"
               onClick={handleNext}
               aria-label="Next project"
-              className="hidden sm:flex size-11 sm:size-12 shrink-0 items-center justify-center rounded-full border border-[#E4E7EC] bg-white text-[#0E2A6D] shadow-xs transition-all duration-200 hover:border-blue-300 hover:bg-[#EAF1FF] hover:text-[#2563EB] hover:scale-105 active:scale-95 focus:outline-none"
+              className="hidden sm:flex size-10 sm:size-11 shrink-0 items-center justify-center rounded-full border border-[#E4E7EC] bg-white text-[#0E2A6D] shadow-xs transition-all duration-200 hover:border-blue-300 hover:bg-[#EAF1FF] hover:text-[#2563EB] hover:scale-105 active:scale-95 focus:outline-none"
             >
               <svg
                 viewBox="0 0 24 24"
-                width="20"
-                height="20"
+                width="18"
+                height="18"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
@@ -178,17 +178,17 @@ export function Portfolio23() {
 
         {/* Mobile Navigation Arrows (Below Card) */}
         {hasMultipleProjects && (
-          <div className="mt-5 flex items-center justify-center gap-4 sm:hidden">
+          <div className="mt-4 flex items-center justify-center gap-3 sm:hidden">
             <button
               type="button"
               onClick={handlePrev}
               aria-label="Previous project"
-              className="flex size-10 items-center justify-center rounded-full border border-[#E4E7EC] bg-white text-[#0E2A6D] shadow-xs transition-all duration-200 hover:border-blue-300 hover:bg-[#EAF1FF] hover:text-[#2563EB] active:scale-95 focus:outline-none"
+              className="flex size-9 items-center justify-center rounded-full border border-[#E4E7EC] bg-white text-[#0E2A6D] shadow-xs transition-all duration-200 hover:border-blue-300 hover:bg-[#EAF1FF] hover:text-[#2563EB] active:scale-95 focus:outline-none"
             >
               <svg
                 viewBox="0 0 24 24"
-                width="18"
-                height="18"
+                width="16"
+                height="16"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
@@ -203,12 +203,12 @@ export function Portfolio23() {
               type="button"
               onClick={handleNext}
               aria-label="Next project"
-              className="flex size-10 items-center justify-center rounded-full border border-[#E4E7EC] bg-white text-[#0E2A6D] shadow-xs transition-all duration-200 hover:border-blue-300 hover:bg-[#EAF1FF] hover:text-[#2563EB] active:scale-95 focus:outline-none"
+              className="flex size-9 items-center justify-center rounded-full border border-[#E4E7EC] bg-white text-[#0E2A6D] shadow-xs transition-all duration-200 hover:border-blue-300 hover:bg-[#EAF1FF] hover:text-[#2563EB] active:scale-95 focus:outline-none"
             >
               <svg
                 viewBox="0 0 24 24"
-                width="18"
-                height="18"
+                width="16"
+                height="16"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
@@ -223,10 +223,10 @@ export function Portfolio23() {
         )}
 
         {/* Secondary CTA: Explore Our Work → */}
-        <div className="mt-8 flex items-center justify-center">
+        <div className="mt-7 flex items-center justify-center">
           <a
             href="/work"
-            className="group inline-flex items-center justify-center gap-2 rounded-full border border-[#E4E7EC] bg-white px-7 py-3 text-sm sm:text-base font-semibold text-[#101828] shadow-sm transition-all duration-300 hover:border-blue-300 hover:bg-[#EAF1FF] hover:scale-[1.02] active:scale-[0.98]"
+            className="group inline-flex items-center justify-center gap-1.5 rounded-full border border-[#E4E7EC] bg-white px-5 py-2 text-xs sm:text-sm font-semibold text-[#101828] shadow-xs transition-all duration-300 hover:border-blue-300 hover:bg-[#EAF1FF] hover:scale-[1.02] active:scale-[0.98]"
           >
             <span>Explore Our Work</span>
             <span className="text-[#2563EB] transition-transform duration-300 group-hover:translate-x-1">

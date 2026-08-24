@@ -308,7 +308,7 @@ export function NetworkSphere() {
   }, []);
 
   return (
-    <div className="pointer-events-none absolute right-[-4vw] sm:right-[-2vw] lg:right-[1vw] xl:right-[4vw] top-1/2 -translate-y-1/2 z-0 size-[320px] sm:size-[400px] md:size-[480px] lg:size-[560px] xl:size-[620px] opacity-75 sm:opacity-85 lg:opacity-95 transition-opacity duration-500">
+    <div className="pointer-events-none absolute right-[-4vw] sm:right-[-2vw] lg:right-[1vw] xl:right-[3vw] top-1/2 -translate-y-1/2 z-0 size-[260px] sm:size-[320px] md:size-[380px] lg:size-[440px] xl:size-[480px] opacity-75 sm:opacity-85 lg:opacity-95 transition-opacity duration-500">
       <canvas
         ref={canvasRef}
         className="size-full"

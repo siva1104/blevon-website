@@ -26,28 +26,35 @@ button, input, optgroup, select, textarea {
   font-family: inherit;
 }
 
-/* Master 1800px Global Container with Consistent Mobile & Desktop Padding */
+/* Master Global Container with Refined Proportional Scale */
 .global-container {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 1800px;
-  padding-left: 1.25rem; /* 20px on mobile (390px, 414px) */
-  padding-right: 1.25rem; /* 20px on mobile */
+  max-width: 1360px;
+  padding-left: 1.25rem; /* 20px on standard mobile */
+  padding-right: 1.25rem;
   box-sizing: border-box;
 }
 
 @media (max-width: 380px) {
   .global-container {
-    padding-left: 1rem; /* 16px on ultra-compact mobile (320px - 375px) */
-    padding-right: 1rem; /* 16px on ultra-compact mobile */
+    padding-left: 1rem; /* 16px on ultra-compact mobile */
+    padding-right: 1rem;
   }
 }
 
 @media (min-width: 640px) {
   .global-container {
-    padding-left: 2rem; /* 32px (sm:px-8) */
-    padding-right: 2rem; /* 32px (sm:px-8) */
+    padding-left: 1.5rem; /* 24px on tablet */
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .global-container {
+    padding-left: 2rem; /* 32px on desktop */
+    padding-right: 2rem;
   }
 }
 

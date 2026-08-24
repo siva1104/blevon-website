@@ -54,7 +54,7 @@ export function Navbar2() {
             <img
               src={blevonLogo}
               alt="BLEVON"
-              className="h-[66px] w-[165px] sm:h-[80px] sm:w-[200px] object-contain"
+              className="h-12 sm:h-14 md:h-15 w-auto max-w-[160px] sm:max-w-[180px] object-contain"
             />
           </a>
         </div>

@@ -184,15 +184,15 @@ export function TechStack() {
   return (
     <section
       id="technology"
-      className="relative w-full py-16 sm:py-20 md:py-24 overflow-hidden"
+      className="relative w-full py-12 sm:py-16 md:py-18 overflow-hidden"
     >
-      <div className="mx-auto w-full max-w-[1800px] px-6 sm:px-8">
+      <div className="global-container">
         {/* Section Header: Centered */}
-        <div className="mx-auto mb-10 max-w-3xl text-center sm:mb-14">
-          <span className="mb-3 inline-block text-xs font-semibold tracking-[0.24em] text-[#2563EB] uppercase sm:text-sm">
+        <div className="mx-auto mb-8 max-w-2xl text-center sm:mb-10">
+          <span className="mb-2.5 inline-block text-xs font-semibold tracking-[0.22em] text-[#2563EB] uppercase sm:text-sm">
             TECHNOLOGY
           </span>
-          <h2 className="mb-4 text-3xl font-bold tracking-tight text-[#101828] sm:text-4xl md:text-5xl lg:text-6xl leading-[1.15]">
+          <h2 className="mb-3 text-2xl font-bold tracking-tight text-[#101828] sm:text-3xl lg:text-4xl leading-[1.15]">
             Modern tools. Built for real products.
           </h2>
         </div>
@@ -200,12 +200,12 @@ export function TechStack() {
         {/* Animated Infinite Loop Horizontal Marquee */}
         <div className="relative w-full overflow-hidden mask-fade-edges">
           {/* Subtle edge gradient fade masks */}
-          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 sm:w-24 bg-gradient-to-r from-[#F7F8F6] to-transparent" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 sm:w-24 bg-gradient-to-l from-[#F7F8F6] to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-10 sm:w-20 bg-gradient-to-r from-[#F7F8F6] to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-10 sm:w-20 bg-gradient-to-l from-[#F7F8F6] to-transparent" />
 
           {/* Smooth Continuous Animated Row */}
           <motion.div
-            className="flex w-max items-center gap-4 sm:gap-6 py-4"
+            className="flex w-max items-center gap-3 sm:gap-4 py-3"
             animate={{
               x: ["0%", "-50%"],
             }}
@@ -222,12 +222,12 @@ export function TechStack() {
             {MARQUEE_ITEMS.map((tech, idx) => (
               <div
                 key={`${tech.name}-${idx}`}
-                className="group flex shrink-0 items-center gap-3.5 rounded-2xl border border-[#E4E7EC] bg-white px-6 py-4 sm:px-7 sm:py-4.5 shadow-xs transition-all duration-200 hover:border-blue-300 hover:shadow-md"
+                className="group flex shrink-0 items-center gap-2.5 rounded-xl border border-[#E4E7EC] bg-white px-4 py-2.5 sm:px-5 sm:py-3 shadow-xs transition-all duration-200 hover:border-blue-300 hover:shadow-md"
               >
-                <div className="flex size-7 sm:size-8 shrink-0 items-center justify-center transition-transform duration-200 group-hover:scale-110">
+                <div className="flex size-5 sm:size-6 shrink-0 items-center justify-center transition-transform duration-200 group-hover:scale-110">
                   {tech.icon}
                 </div>
-                <span className="whitespace-nowrap text-base sm:text-lg md:text-xl font-bold tracking-tight text-[#101828] transition-colors duration-200 group-hover:text-[#2563EB]">
+                <span className="whitespace-nowrap text-sm sm:text-base font-semibold tracking-tight text-[#101828] transition-colors duration-200 group-hover:text-[#2563EB]">
                   {tech.name}
                 </span>
               </div>

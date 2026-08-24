@@ -8,24 +8,24 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className="relative w-full py-16 sm:py-20 md:py-24"
+      className="relative w-full py-12 sm:py-16 md:py-18"
     >
       <div className="global-container">
-        <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-[1.15fr_0.85fr] lg:grid-cols-[1fr_440px] xl:grid-cols-[1fr_500px] lg:gap-14 xl:gap-20">
+        <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-[1.15fr_0.85fr] lg:grid-cols-[1fr_380px] xl:grid-cols-[1fr_420px] lg:gap-10 xl:gap-14">
           {/* LEFT: About Story & Description */}
           <div className="flex flex-col justify-center">
             {/* Eyebrow */}
-            <span className="mb-2.5 inline-block text-sm font-semibold tracking-[0.24em] text-[#2563EB] uppercase sm:text-base">
+            <span className="mb-2 inline-block text-xs font-semibold tracking-[0.2em] text-[#2563EB] uppercase">
               ABOUT BLEVON
             </span>
 
             {/* Headline */}
-            <h2 className="text-4xl font-bold tracking-tight text-[#101828] sm:text-5xl lg:text-6xl leading-[1.15]">
+            <h2 className="text-xl font-bold tracking-tight text-[#101828] sm:text-2xl lg:text-3xl leading-[1.18]">
               We build digital products for real businesses.
             </h2>
 
             {/* Description */}
-            <div className="mt-4 space-y-3.5 text-lg text-[#667085] sm:text-xl leading-relaxed max-w-2xl">
+            <div className="mt-2.5 space-y-2 text-xs text-[#667085] sm:text-sm leading-relaxed max-w-lg">
               <p>
                 Blevon is a digital development studio focused on building
                 websites and mobile applications for businesses.
@@ -38,13 +38,13 @@ export function AboutSection() {
             </div>
 
             {/* Secondary Text Link */}
-            <div className="mt-6 pt-4 border-t border-[#E4E7EC]/80 sm:mt-8">
+            <div className="mt-4 pt-3 border-t border-[#E4E7EC]/80 sm:mt-5">
               <a
                 href="/about"
-                className="group inline-flex items-center gap-2 text-lg font-semibold text-[#0E2A6D] transition-colors duration-200 hover:text-[#2563EB]"
+                className="group inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#0E2A6D] transition-colors duration-200 hover:text-[#2563EB]"
               >
                 <span>More About Blevon</span>
-                <span className="text-[#2563EB] transition-transform duration-300 group-hover:translate-x-1.5">
+                <span className="text-[#2563EB] transition-transform duration-300 group-hover:translate-x-1">
                   →
                 </span>
               </a>
@@ -59,11 +59,11 @@ export function AboutSection() {
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
             className="w-full"
           >
-            <div className="overflow-hidden rounded-2xl sm:rounded-3xl border border-[#E4E7EC] bg-[#0A0D14] p-1 sm:p-1.5 shadow-sm">
+            <div className="overflow-hidden rounded-2xl border border-[#E4E7EC] bg-[#0A0D14] p-1 sm:p-1.5 shadow-xs">
               <img
                 src={aboutCodeParticlesImg}
                 alt="Digital code window transforming into constellation particles"
-                className="aspect-[16/10] w-full rounded-xl sm:rounded-2xl object-cover transition-transform duration-700 hover:scale-[1.03]"
+                className="aspect-[16/10] w-full rounded-xl object-cover transition-transform duration-700 hover:scale-[1.03]"
                 loading="lazy"
               />
             </div>

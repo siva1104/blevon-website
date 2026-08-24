@@ -8,30 +8,30 @@ export function Layout239() {
   return (
     <section
       id="services"
-      className="relative w-full scroll-mt-28 py-16 sm:py-20 md:py-24"
+      className="relative w-full scroll-mt-24 pt-8 sm:pt-10 md:pt-12 pb-12 sm:pb-16 md:pb-18"
     >
       <div className="global-container">
         {/* Section Header: Centered with Controlled Width */}
-        <div className="mx-auto mb-12 max-w-3xl text-center sm:mb-16">
-          <span className="mb-3 inline-block text-sm font-semibold tracking-[0.24em] text-[#2563EB] uppercase sm:text-base">
+        <div className="mx-auto mb-8 max-w-xl text-center sm:mb-10">
+          <span className="mb-2 inline-block text-xs font-semibold tracking-[0.2em] text-[#2563EB] uppercase">
             SERVICES
           </span>
-          <h2 className="mb-4 text-4xl font-bold tracking-tight text-[#101828] sm:text-5xl md:text-6xl lg:text-7xl leading-[1.15]">
+          <h2 className="mb-2.5 text-xl font-bold tracking-tight text-[#101828] sm:text-2xl md:text-3xl lg:text-[34px] leading-[1.18]">
             Digital products built for your business.
           </h2>
-          <p className="mx-auto max-w-[620px] text-lg text-[#667085] sm:text-xl lg:text-2xl leading-relaxed">
+          <p className="mx-auto max-w-[480px] text-sm text-[#667085] sm:text-[15px] leading-relaxed">
             We design and develop websites and mobile applications around your
             business, your customers, and your goals.
           </p>
         </div>
 
         {/* 2-Card Balanced Responsive Service Grid */}
-        <div className="mx-auto grid max-w-lg md:max-w-5xl lg:max-w-6xl xl:max-w-[1200px] grid-cols-1 gap-8 md:grid-cols-2 lg:gap-10">
+        <div className="mx-auto grid max-w-lg md:max-w-4xl lg:max-w-5xl grid-cols-1 gap-5 md:grid-cols-2 lg:gap-6">
           {/* Service 01: Website Development */}
-          <div className="group flex flex-col justify-between overflow-hidden rounded-3xl border border-[#E4E7EC] bg-white p-7 sm:p-9 lg:p-10 shadow-sm transition-all duration-300 hover:border-blue-300 hover:shadow-md">
+          <div className="group flex flex-col justify-between overflow-hidden rounded-2xl border border-[#E4E7EC] bg-white p-5 sm:p-6 lg:p-7 shadow-xs transition-all duration-300 hover:border-blue-300 hover:shadow-md">
             <div>
               {/* Service Visual (Balanced 16:10 Ratio) */}
-              <div className="mb-8 overflow-hidden rounded-2xl border border-[#E4E7EC] bg-[#F7F8F6]">
+              <div className="mb-5 overflow-hidden rounded-xl border border-[#E4E7EC] bg-[#F7F8F6]">
                 <img
                   src={serviceWebsiteImg}
                   alt="High-performance website development with SEO-ready foundations"
@@ -41,12 +41,12 @@ export function Layout239() {
               </div>
 
               {/* Service Title */}
-              <span className="text-sm font-bold tracking-[0.18em] text-[#2563EB] uppercase sm:text-base">
+              <span className="text-xs font-bold tracking-[0.16em] text-[#2563EB] uppercase">
                 01 — Website Development
               </span>
 
               {/* Short Description */}
-              <p className="mt-4 text-lg text-[#667085] sm:text-xl leading-relaxed">
+              <p className="mt-2.5 text-xs text-[#667085] sm:text-sm leading-relaxed">
                 We design and develop fast, responsive websites around your
                 business goals, with SEO-ready foundations that help your
                 customers find and connect with you.
@@ -54,13 +54,13 @@ export function Layout239() {
             </div>
 
             {/* Secondary CTA Button */}
-            <div className="mt-8 pt-6 border-t border-[#E4E7EC]">
+            <div className="mt-5 pt-4 border-t border-[#E4E7EC]">
               <a
                 href="/services/web-development"
-                className="group/link inline-flex items-center gap-2 text-lg font-semibold text-[#0E2A6D] transition-colors duration-200 hover:text-[#2563EB]"
+                className="group/link inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#0E2A6D] transition-colors duration-200 hover:text-[#2563EB]"
               >
                 <span>Explore Website Development</span>
-                <span className="transition-transform duration-300 group-hover/link:translate-x-1.5 text-[#2563EB]">
+                <span className="transition-transform duration-300 group-hover/link:translate-x-1 text-[#2563EB]">
                   →
                 </span>
               </a>
@@ -68,10 +68,10 @@ export function Layout239() {
           </div>
 
           {/* Service 02: App Development */}
-          <div className="group flex flex-col justify-between overflow-hidden rounded-3xl border border-[#E4E7EC] bg-white p-7 sm:p-9 lg:p-10 shadow-sm transition-all duration-300 hover:border-blue-300 hover:shadow-md">
+          <div className="group flex flex-col justify-between overflow-hidden rounded-2xl border border-[#E4E7EC] bg-white p-5 sm:p-6 lg:p-7 shadow-xs transition-all duration-300 hover:border-blue-300 hover:shadow-md">
             <div>
               {/* Service Visual (Balanced 16:10 Ratio) */}
-              <div className="mb-8 overflow-hidden rounded-2xl border border-[#E4E7EC] bg-[#F7F8F6]">
+              <div className="mb-5 overflow-hidden rounded-xl border border-[#E4E7EC] bg-[#F7F8F6]">
                 <img
                   src={serviceAppImg}
                   alt="Modern mobile application development focused on performance and usability"
@@ -81,12 +81,12 @@ export function Layout239() {
               </div>
 
               {/* Service Title */}
-              <span className="text-sm font-bold tracking-[0.18em] text-[#2563EB] uppercase sm:text-base">
+              <span className="text-xs font-bold tracking-[0.16em] text-[#2563EB] uppercase">
                 02 — App Development
               </span>
 
               {/* Short Description */}
-              <p className="mt-4 text-lg text-[#667085] sm:text-xl leading-relaxed">
+              <p className="mt-2.5 text-xs text-[#667085] sm:text-sm leading-relaxed">
                 We design and develop modern mobile applications focused on
                 usability, performance, and the needs of your business and
                 customers.
@@ -94,13 +94,13 @@ export function Layout239() {
             </div>
 
             {/* Secondary CTA Button */}
-            <div className="mt-8 pt-6 border-t border-[#E4E7EC]">
+            <div className="mt-5 pt-4 border-t border-[#E4E7EC]">
               <a
                 href="/services/app-development"
-                className="group/link inline-flex items-center gap-2 text-lg font-semibold text-[#0E2A6D] transition-colors duration-200 hover:text-[#2563EB]"
+                className="group/link inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#0E2A6D] transition-colors duration-200 hover:text-[#2563EB]"
               >
                 <span>Explore App Development</span>
-                <span className="transition-transform duration-300 group-hover/link:translate-x-1.5 text-[#2563EB]">
+                <span className="transition-transform duration-300 group-hover/link:translate-x-1 text-[#2563EB]">
                   →
                 </span>
               </a>

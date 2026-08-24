@@ -25,19 +25,19 @@ export function WhyBlevon() {
   return (
     <section
       id="why-blevon"
-      className="relative w-full py-16 sm:py-20 md:py-24"
+      className="relative w-full py-12 sm:py-16 md:py-18"
     >
       <div className="global-container">
         {/* Section Header: Centered */}
-        <div className="mx-auto mb-14 max-w-3xl text-center sm:mb-16">
-          <span className="mb-3 inline-block text-sm font-semibold tracking-[0.24em] text-[#2563EB] uppercase sm:text-base">
+        <div className="mx-auto mb-8 max-w-xl text-center sm:mb-10">
+          <span className="mb-2 inline-block text-xs font-semibold tracking-[0.2em] text-[#2563EB] uppercase">
             WHY BLEVON
           </span>
-          <h2 className="mb-4 text-4xl font-bold tracking-tight text-[#101828] sm:text-5xl md:text-6xl lg:text-7xl leading-[1.15]">
+          <h2 className="mb-2.5 text-xl font-bold tracking-tight text-[#101828] sm:text-2xl md:text-3xl lg:text-[34px] leading-[1.18]">
             Built around your goals,
-            <span className="block mt-1 text-[#667085]">not a template.</span>
+            <span className="block mt-0.5 text-[#667085]">not a template.</span>
           </h2>
-          <p className="mx-auto max-w-[620px] text-lg text-[#667085] sm:text-xl lg:text-2xl leading-relaxed">
+          <p className="mx-auto max-w-[480px] text-sm text-[#667085] sm:text-[15px] leading-relaxed">
             We focus on understanding what your business needs before we start
             building. Every website and application is designed around the people
             who will use it, with attention to performance, usability, and the
@@ -46,8 +46,8 @@ export function WhyBlevon() {
         </div>
 
         {/* 3 Equal Principles Spanning the Full Navbar Grid */}
-        <div className="border-t border-[#E4E7EC] pt-10 sm:pt-14">
-          <div className="grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8 lg:gap-14">
+        <div className="border-t border-[#E4E7EC] pt-6 sm:pt-8">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-5 lg:gap-8">
             {PRINCIPLES.map((item, idx) => (
               <motion.div
                 key={item.num}
@@ -62,17 +62,17 @@ export function WhyBlevon() {
                 className="flex flex-col justify-start"
               >
                 {/* Number & Title */}
-                <div className="mb-4 flex items-baseline gap-3">
-                  <span className="font-mono text-sm font-bold tracking-wider text-[#2563EB] sm:text-base">
+                <div className="mb-2 flex items-baseline gap-2">
+                  <span className="font-mono text-xs font-bold tracking-wider text-[#2563EB]">
                     {item.num}
                   </span>
-                  <h3 className="font-mono text-base font-bold tracking-widest text-[#101828] uppercase sm:text-lg">
+                  <h3 className="font-mono text-xs font-bold tracking-widest text-[#101828] uppercase sm:text-sm">
                     {item.title}
                   </h3>
                 </div>
 
                 {/* Description */}
-                <p className="text-base text-[#667085] leading-relaxed sm:text-lg lg:text-xl">
+                <p className="text-xs text-[#667085] leading-relaxed sm:text-sm">
                   {item.desc}
                 </p>
               </motion.div>

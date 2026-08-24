@@ -213,15 +213,15 @@ export default function CaseStudyPage() {
       {/* 1. Master Navbar */}
       <Navbar2 />
 
-      <main>
+      <main className="pt-20 sm:pt-22 md:pt-24">
         {/* ============================================================ */}
         {/* BREADCRUMB (Above Hero Section)                              */}
         {/* ============================================================ */}
-        <div className="pt-6 sm:pt-8">
+        <div className="pt-3 sm:pt-4">
           <div className="global-container">
             <nav
               aria-label="Breadcrumb"
-              className="flex items-center gap-2.5 text-sm font-medium sm:text-base md:text-lg"
+              className="flex items-center gap-1.5 text-[11px] sm:text-xs font-medium"
             >
               <a
                 href="/"
@@ -229,14 +229,14 @@ export default function CaseStudyPage() {
               >
                 Home
               </a>
-              <span className="text-[#98A2B3] select-none">/</span>
+              <span className="text-[#98A2B3] select-none text-[10px]">/</span>
               <a
                 href="/work"
                 className="text-[#667085] transition-colors duration-200 hover:text-[#2563EB]"
               >
                 Work
               </a>
-              <span className="text-[#98A2B3] select-none">/</span>
+              <span className="text-[#98A2B3] select-none text-[10px]">/</span>
               <span className="font-semibold text-[#0E2A6D]">Kavuturu Dental Clinic</span>
             </nav>
           </div>
@@ -245,35 +245,35 @@ export default function CaseStudyPage() {
         {/* ============================================================ */}
         {/* 1. PROJECT HERO (Editorial Left-Aligned Layout)              */}
         {/* ============================================================ */}
-        <section className="relative w-full pt-8 pb-12 sm:pt-10 sm:pb-16">
+        <section className="relative w-full pt-4 pb-6 sm:pt-5 sm:pb-8">
           <div className="global-container">
-            <div className="flex flex-col items-start max-w-4xl">
+            <div className="flex flex-col items-start max-w-3xl">
               {/* Eyebrow */}
               <motion.span
-                initial={{ opacity: 0, y: 10 }}
+                initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
-                className="mb-3 inline-block text-xs font-semibold tracking-[0.24em] text-[#2563EB] uppercase sm:text-sm"
+                className="mb-1.5 inline-block text-[11px] font-semibold tracking-[0.2em] text-[#2563EB] uppercase"
               >
                 CASE STUDY
               </motion.span>
 
               {/* Project Title */}
               <motion.h1
-                initial={{ opacity: 0, y: 14 }}
+                initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.16, ease: [0.16, 1, 0.3, 1] }}
-                className="text-4xl font-bold tracking-tight text-[#0E2A6D] sm:text-5xl lg:text-6xl xl:text-[64px] leading-[1.08] uppercase"
+                className="text-2xl font-bold tracking-tight text-[#0E2A6D] sm:text-3xl lg:text-[38px] xl:text-[42px] leading-[1.14] uppercase"
               >
                 KAVUTURU DENTAL CLINIC
               </motion.h1>
 
               {/* Service */}
               <motion.p
-                initial={{ opacity: 0, y: 10 }}
+                initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.22, ease: [0.16, 1, 0.3, 1] }}
-                className="mt-2 text-xl font-semibold text-[#2563EB] sm:text-2xl"
+                className="mt-1 text-sm font-semibold text-[#2563EB] sm:text-base"
               >
                 Website Development
               </motion.p>
@@ -283,7 +283,7 @@ export default function CaseStudyPage() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.28, ease: [0.16, 1, 0.3, 1] }}
-                className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-medium text-[#667085] sm:text-sm"
+                className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-medium text-[#667085]"
               >
                 <div className="flex items-center gap-1.5">
                   <span className="text-[#98A2B3]">Started:</span>
@@ -298,10 +298,10 @@ export default function CaseStudyPage() {
 
               {/* Description */}
               <motion.p
-                initial={{ opacity: 0, y: 10 }}
+                initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.34, ease: [0.16, 1, 0.3, 1] }}
-                className="mt-6 max-w-3xl text-base text-[#667085] sm:text-lg lg:text-xl leading-relaxed"
+                className="mt-3 max-w-xl text-xs text-[#667085] sm:text-sm lg:text-[14.5px] leading-relaxed"
               >
                 A high-performance digital web redesign engineered for patient usability,
                 search discovery, and dynamic content management.
@@ -312,13 +312,13 @@ export default function CaseStudyPage() {
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                className="mt-7 flex items-center gap-4"
+                className="mt-4 flex items-center gap-3"
               >
                 <a
-                  href="https://www.kavuturudentalclinic.com/?utm_source=chatgpt.com"
+                  href="https://www.kavuturudentalclinic.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex h-13 sm:h-14 items-center justify-center gap-2.5 rounded-full bg-[#2563EB] px-7 sm:px-8 text-base font-semibold text-white shadow-[0_4px_16px_rgba(37,99,235,0.28)] transition-all duration-300 hover:bg-blue-700 hover:shadow-[0_8px_24px_rgba(37,99,235,0.4)] hover:scale-[1.02] active:scale-[0.98]"
+                  className="group inline-flex h-10 sm:h-11 items-center justify-center gap-2 rounded-full bg-[#2563EB] px-5 sm:px-5.5 text-xs sm:text-[13px] font-semibold text-white shadow-[0_4px_14px_rgba(37,99,235,0.25)] transition-all duration-300 hover:bg-blue-700 hover:shadow-[0_6px_20px_rgba(37,99,235,0.35)] active:scale-[0.98]"
                 >
                   <span>View Live Website</span>
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
@@ -331,49 +331,49 @@ export default function CaseStudyPage() {
         </section>
 
         {/* HERO VISUAL (Desktop + Mobile Responsive Equal-Height Showcase) */}
-        <section className="relative w-full pb-16 md:pb-24">
+        <section className="relative w-full pb-10 md:pb-14">
           <div className="global-container">
             <motion.div
-              initial={{ opacity: 0, y: 16 }}
+              initial={{ opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="group relative rounded-2xl sm:rounded-3xl border border-[#E4E7EC] bg-white p-3 sm:p-5 lg:p-6 shadow-xs transition-all duration-500 hover:border-blue-300 hover:shadow-md"
+              className="group relative rounded-2xl border border-[#E4E7EC] bg-white p-2.5 sm:p-4 lg:p-5 shadow-2xs transition-all duration-500 hover:border-blue-300 hover:shadow-md"
             >
-              <div className="relative w-full rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#F4F5F2] via-[#EAF1FF]/40 to-[#F0F2EE] p-5 sm:p-8 md:p-10 lg:p-12">
-                <div className="flex flex-col lg:flex-row items-center lg:items-stretch justify-center gap-8 lg:gap-10">
+              <div className="relative w-full rounded-xl bg-gradient-to-br from-[#F4F5F2] via-[#EAF1FF]/40 to-[#F0F2EE] p-3 sm:p-5 md:p-6 lg:p-8">
+                <div className="flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-7">
                   
                   {/* 1. Desktop Browser Frame */}
-                  <div className="w-full lg:flex-1 overflow-hidden rounded-xl sm:rounded-2xl border border-[#D0D5DD] bg-white shadow-xl transition-transform duration-700 ease-out group-hover:scale-[1.008] flex flex-col">
-                    <div className="flex h-7 sm:h-9 shrink-0 items-center justify-between border-b border-[#E4E7EC] bg-[#F8F9FA] px-3 sm:px-4">
-                      <div className="flex items-center gap-1.5 sm:gap-2">
-                        <div className="size-2 sm:size-2.5 rounded-full bg-[#FF5F56]" />
-                        <div className="size-2 sm:size-2.5 rounded-full bg-[#FFBD2E]" />
-                        <div className="size-2 sm:size-2.5 rounded-full bg-[#27C93F]" />
+                  <div className="w-full lg:flex-1 overflow-hidden rounded-xl border border-[#D0D5DD] bg-white shadow-md transition-transform duration-700 ease-out group-hover:scale-[1.006] flex flex-col">
+                    <div className="flex h-7 shrink-0 items-center justify-between border-b border-[#E4E7EC] bg-[#F8F9FA] px-3">
+                      <div className="flex items-center gap-1.5">
+                        <div className="size-2 rounded-full bg-[#FF5F56]" />
+                        <div className="size-2 rounded-full bg-[#FFBD2E]" />
+                        <div className="size-2 rounded-full bg-[#27C93F]" />
                       </div>
-                      <div className="flex h-4 sm:h-5 items-center rounded-md border border-[#E4E7EC] bg-white px-3 text-[10px] sm:text-xs font-medium text-[#667085]">
-                        kavuturudental.com
+                      <div className="flex h-4 items-center rounded-md border border-[#E4E7EC] bg-white px-2.5 text-[10px] sm:text-xs font-medium text-[#667085]">
+                        kavuturudentalclinic.com
                       </div>
-                      <div className="w-8 sm:w-12" />
+                      <div className="w-8 sm:w-10" />
                     </div>
-                    <div className="relative flex-1 w-full overflow-hidden bg-white min-h-[320px] sm:min-h-[420px] lg:min-h-[480px]">
+                    <div className="relative w-full bg-white flex items-center justify-center p-1 sm:p-2">
                       <img
                         src={kavuturuDesktopImg}
                         alt="Kavuturu Dental Clinic Desktop Website"
-                        className="size-full object-cover object-top"
+                        className="w-full h-auto object-contain rounded-md block"
                         loading="eager"
                       />
                     </div>
                   </div>
 
                   {/* 2. Mobile Device */}
-                  <div className="w-[70%] sm:w-[320px] md:w-[290px] lg:w-[270px] xl:w-[290px] shrink-0 transition-transform duration-700 ease-out group-hover:-translate-y-2 flex flex-col">
-                    <div className="relative h-full w-full rounded-[2.2rem] sm:rounded-[2.8rem] border-[6px] sm:border-[8px] border-[#0F172A] bg-[#0F172A] shadow-[0_25px_60px_-10px_rgba(0,0,0,0.35)] ring-1 ring-white/20 overflow-hidden flex flex-col">
-                      <div className="absolute left-1/2 top-2 h-2.5 sm:h-3.5 w-14 sm:w-18 -translate-x-1/2 rounded-full bg-black z-30" />
-                      <div className="relative flex-1 w-full overflow-hidden rounded-[1.8rem] sm:rounded-[2.4rem] bg-white min-h-[320px] sm:min-h-[420px] lg:min-h-[480px]">
+                  <div className="w-[55%] sm:w-[200px] md:w-[220px] lg:w-[210px] xl:w-[230px] shrink-0 transition-transform duration-700 ease-out group-hover:-translate-y-1 flex flex-col justify-center">
+                    <div className="relative w-full rounded-[1.6rem] sm:rounded-[2rem] border-[4px] sm:border-[5px] border-[#0F172A] bg-[#0F172A] shadow-[0_16px_40px_-10px_rgba(0,0,0,0.28)] ring-1 ring-white/20 overflow-hidden flex flex-col">
+                      <div className="absolute left-1/2 top-1.5 h-1.5 sm:h-2 w-10 sm:w-12 -translate-x-1/2 rounded-full bg-black z-30" />
+                      <div className="relative w-full overflow-hidden rounded-[1.3rem] sm:rounded-[1.7rem] bg-white p-0.5 flex items-center justify-center">
                         <img
                           src={kavuturuMobileImg}
                           alt="Kavuturu Dental Clinic Mobile Responsive Website"
-                          className="size-full object-cover object-top"
+                          className="w-full h-auto object-contain block"
                           loading="eager"
                         />
                       </div>
@@ -389,19 +389,19 @@ export default function CaseStudyPage() {
         {/* ============================================================ */}
         {/* 2. PROJECT OVERVIEW                                          */}
         {/* ============================================================ */}
-        <section className="relative w-full border-t border-[#E4E7EC] py-20 md:py-28">
+        <section className="relative w-full border-t border-[#E4E7EC] py-10 sm:py-12 md:py-14">
           <div className="global-container">
-            <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_1.5fr] lg:gap-16 items-start">
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1fr_1.5fr] lg:gap-12 items-start">
               <div>
-                <span className="mb-3 inline-block text-xs font-semibold tracking-[0.24em] text-[#2563EB] uppercase sm:text-sm">
+                <span className="mb-1.5 inline-block text-[11px] font-semibold tracking-[0.2em] text-[#2563EB] uppercase">
                   PROJECT OVERVIEW
                 </span>
-                <h2 className="text-3xl font-bold tracking-tight text-[#101828] sm:text-4xl md:text-5xl leading-[1.15]">
+                <h2 className="text-xl font-bold tracking-tight text-[#101828] sm:text-2xl md:text-3xl lg:text-[32px] leading-[1.18]">
                   Redesigning an existing digital presence.
                 </h2>
               </div>
 
-              <div className="space-y-6 text-lg text-[#667085] sm:text-xl leading-relaxed">
+              <div className="space-y-3 text-xs text-[#667085] sm:text-sm md:text-[14.5px] leading-relaxed">
                 <p>
                   Kavuturu Dental Clinic already had an existing website, but it needed
                   a more modern user experience, stronger SEO foundations, and a better
@@ -419,31 +419,31 @@ export default function CaseStudyPage() {
         {/* ============================================================ */}
         {/* 3. PROJECT OBJECTIVES                                        */}
         {/* ============================================================ */}
-        <section className="relative w-full border-t border-[#E4E7EC] bg-white py-20 md:py-28">
+        <section className="relative w-full border-t border-[#E4E7EC] bg-white py-10 sm:py-12 md:py-14">
           <div className="global-container">
-            <div className="mb-14 max-w-3xl sm:mb-18">
-              <span className="mb-3 inline-block text-xs font-semibold tracking-[0.24em] text-[#2563EB] uppercase sm:text-sm">
+            <div className="mb-6 max-w-2xl sm:mb-8">
+              <span className="mb-1.5 inline-block text-[11px] font-semibold tracking-[0.2em] text-[#2563EB] uppercase">
                 OBJECTIVES
               </span>
-              <h2 className="text-3xl font-bold tracking-tight text-[#101828] sm:text-4xl md:text-5xl lg:text-6xl leading-[1.15]">
+              <h2 className="text-xl font-bold tracking-tight text-[#101828] sm:text-2xl md:text-3xl lg:text-[32px] leading-[1.18]">
                 From an existing website to a more capable digital platform.
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-4 sm:gap-5 md:grid-cols-3">
               {objectives.map((obj) => (
                 <div
                   key={obj.num}
-                  className="flex flex-col justify-between rounded-2xl sm:rounded-3xl border border-[#E4E7EC] bg-[#F7F8F6] p-7 sm:p-9 shadow-2xs transition-all duration-300 hover:border-blue-300 hover:bg-white hover:shadow-sm"
+                  className="flex flex-col justify-between rounded-xl border border-[#E4E7EC] bg-[#F7F8F6] p-4 sm:p-5 shadow-2xs transition-all duration-300 hover:border-blue-300 hover:bg-white hover:shadow-xs"
                 >
                   <div>
-                    <span className="font-mono text-sm font-bold tracking-wider text-[#2563EB] sm:text-base">
+                    <span className="font-mono text-xs font-bold tracking-wider text-[#2563EB]">
                       {obj.num}
                     </span>
-                    <h3 className="mt-3 text-xl font-bold text-[#101828] sm:text-2xl">
+                    <h3 className="mt-1.5 text-base font-bold text-[#101828] sm:text-lg">
                       {obj.title}
                     </h3>
-                    <p className="mt-3.5 text-base text-[#667085] leading-relaxed">
+                    <p className="mt-2 text-xs text-[#667085] sm:text-[13px] leading-relaxed">
                       {obj.desc}
                     </p>
                   </div>
@@ -456,28 +456,28 @@ export default function CaseStudyPage() {
         {/* ============================================================ */}
         {/* 4. WHAT BLEVON DELIVERED                                     */}
         {/* ============================================================ */}
-        <section className="relative w-full border-t border-[#E4E7EC] py-20 md:py-28">
+        <section className="relative w-full border-t border-[#E4E7EC] py-10 sm:py-12 md:py-14">
           <div className="global-container">
-            <div className="mb-14 max-w-3xl sm:mb-18">
-              <span className="mb-3 inline-block text-xs font-semibold tracking-[0.24em] text-[#2563EB] uppercase sm:text-sm">
+            <div className="mb-6 max-w-2xl sm:mb-8">
+              <span className="mb-1.5 inline-block text-[11px] font-semibold tracking-[0.2em] text-[#2563EB] uppercase">
                 DELIVERED
               </span>
-              <h2 className="text-3xl font-bold tracking-tight text-[#101828] sm:text-4xl md:text-5xl lg:text-6xl leading-[1.15]">
+              <h2 className="text-xl font-bold tracking-tight text-[#101828] sm:text-2xl md:text-3xl lg:text-[32px] leading-[1.18]">
                 Three areas. One complete digital improvement.
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {deliveredServices.map((service) => (
                 <div
                   key={service.title}
-                  className="flex flex-col justify-between rounded-2xl sm:rounded-3xl border border-[#E4E7EC] bg-white p-7 sm:p-9 shadow-xs transition-all duration-300 hover:border-blue-300 hover:shadow-sm"
+                  className="flex flex-col justify-between rounded-xl border border-[#E4E7EC] bg-white p-4 sm:p-5 shadow-2xs transition-all duration-300 hover:border-blue-300 hover:shadow-xs"
                 >
                   <div>
-                    <h3 className="text-xl font-bold text-[#101828] sm:text-2xl">
+                    <h3 className="text-base font-bold text-[#101828] sm:text-lg">
                       {service.title}
                     </h3>
-                    <p className="mt-3.5 text-base text-[#667085] leading-relaxed">
+                    <p className="mt-2 text-xs text-[#667085] sm:text-[13px] leading-relaxed">
                       {service.desc}
                     </p>
                   </div>
@@ -488,56 +488,58 @@ export default function CaseStudyPage() {
         </section>
 
         {/* ============================================================ */}
-        {/* 5. BEFORE & AFTER — LOCKED (Existing section untouched)       */}
+        {/* 5. BEFORE & AFTER                                            */}
         {/* ============================================================ */}
-        <section className="relative w-full border-t border-[#E4E7EC] bg-[#F7F8F6] py-20 md:py-28">
+        <section className="relative w-full border-t border-[#E4E7EC] bg-[#F7F8F6] py-10 sm:py-12 md:py-14">
           <div className="global-container">
-            <div className="mb-14 max-w-3xl sm:mb-18">
-              <span className="mb-3 inline-block text-xs font-semibold tracking-[0.24em] text-[#2563EB] uppercase sm:text-base">
+            <div className="mb-6 max-w-2xl sm:mb-8">
+              <span className="mb-1.5 inline-block text-[11px] font-semibold tracking-[0.2em] text-[#2563EB] uppercase">
                 VISUAL COMPARISON
               </span>
-              <h2 className="text-3xl font-bold tracking-tight text-[#101828] sm:text-4xl md:text-5xl lg:text-6xl leading-[1.15]">
+              <h2 className="text-xl font-bold tracking-tight text-[#101828] sm:text-2xl md:text-3xl lg:text-[32px] leading-[1.18]">
                 Before & After
               </h2>
-              <p className="mt-4 text-lg text-[#667085] leading-relaxed">
+              <p className="mt-2 text-xs text-[#667085] sm:text-sm leading-relaxed">
                 Demonstrating the transformation from the client's original website
                 to BLEVON's high-performance digital redesign.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8">
               {/* BEFORE CARD */}
-              <div className="flex flex-col justify-between rounded-2xl sm:rounded-3xl border border-[#E4E7EC] bg-white p-4 sm:p-6 shadow-xs">
+              <div className="flex flex-col justify-between rounded-2xl border border-[#E4E7EC] bg-white p-4 sm:p-5 shadow-xs">
                 <div>
-                  <div className="mb-4 flex items-center justify-between">
-                    <span className="inline-flex items-center gap-2 rounded-full border border-[#D0D5DD] bg-[#F2F4F7] px-3.5 py-1 text-xs font-bold text-[#475467] uppercase tracking-wider">
+                  <div className="mb-3.5 flex items-center justify-between">
+                    <span className="inline-flex items-center gap-1.5 rounded-full border border-[#D0D5DD] bg-[#F2F4F7] px-3 py-0.5 text-xs font-bold text-[#475467] uppercase tracking-wider">
                       Existing Website / Before
                     </span>
                     <span className="text-xs text-[#98A2B3] font-mono">kavuturudental.in</span>
                   </div>
 
-                  <div className="overflow-hidden rounded-xl sm:rounded-2xl border border-[#E4E7EC] bg-[#F8F9FA] shadow-inner">
-                    <div className="flex h-7 items-center justify-between border-b border-[#E4E7EC] bg-[#F2F4F7] px-3">
-                      <div className="flex items-center gap-1.5">
-                        <div className="size-2 rounded-full bg-[#D0D5DD]" />
-                        <div className="size-2 rounded-full bg-[#D0D5DD]" />
-                        <div className="size-2 rounded-full bg-[#D0D5DD]" />
+                  <div className="overflow-hidden rounded-xl border border-[#E4E7EC] bg-[#F8F9FA] shadow-inner">
+                    <div className="flex h-6 items-center justify-between border-b border-[#E4E7EC] bg-[#F2F4F7] px-2.5">
+                      <div className="flex items-center gap-1">
+                        <div className="size-1.5 rounded-full bg-[#D0D5DD]" />
+                        <div className="size-1.5 rounded-full bg-[#D0D5DD]" />
+                        <div className="size-1.5 rounded-full bg-[#D0D5DD]" />
                       </div>
-                      <span className="text-[10px] text-[#667085] font-mono">kavuturudental.in</span>
-                      <div className="w-6" />
+                      <span className="text-[9px] text-[#667085] font-mono">kavuturudental.in</span>
+                      <div className="w-5" />
                     </div>
-                    <img
-                      src={kavuturuBeforeImg}
-                      alt="Kavuturu Dental Clinic original existing website (Before)"
-                      className="w-full object-cover"
-                      loading="lazy"
-                    />
+                    <div className="w-full bg-[#F8F9FA] p-2 sm:p-3 flex items-center justify-center">
+                      <img
+                        src={kavuturuBeforeImg}
+                        alt="Kavuturu Dental Clinic original existing website (Before)"
+                        className="w-full h-auto max-h-[360px] sm:max-h-[400px] object-contain rounded-md shadow-2xs block"
+                        loading="lazy"
+                      />
+                    </div>
                   </div>
                 </div>
 
-                <div className="mt-6 border-t border-[#F2F4F7] pt-4">
-                  <h4 className="text-base font-bold text-[#101828]">Previous Limitations:</h4>
-                  <ul className="mt-2 space-y-1.5 text-sm text-[#667085]">
+                <div className="mt-4 border-t border-[#F2F4F7] pt-3">
+                  <h4 className="text-sm font-bold text-[#101828]">Previous Limitations:</h4>
+                  <ul className="mt-1.5 space-y-1 text-xs text-[#667085]">
                     <li>• Static page structure requiring developer code edits</li>
                     <li>• Unstructured mobile responsive breakpoints</li>
                     <li>• Basic on-page search metadata</li>
@@ -546,38 +548,40 @@ export default function CaseStudyPage() {
               </div>
 
               {/* AFTER CARD */}
-              <div className="flex flex-col justify-between rounded-2xl sm:rounded-3xl border border-blue-200 bg-white p-4 sm:p-6 shadow-sm ring-1 ring-blue-100">
+              <div className="flex flex-col justify-between rounded-2xl border border-blue-200 bg-white p-4 sm:p-5 shadow-xs ring-1 ring-blue-100">
                 <div>
-                  <div className="mb-4 flex items-center justify-between">
-                    <span className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-[#EAF1FF] px-3.5 py-1 text-xs font-bold text-[#2563EB] uppercase tracking-wider">
+                  <div className="mb-3.5 flex items-center justify-between">
+                    <span className="inline-flex items-center gap-1.5 rounded-full border border-blue-200 bg-[#EAF1FF] px-3 py-0.5 text-xs font-bold text-[#2563EB] uppercase tracking-wider">
                       <span className="size-1.5 rounded-full bg-[#2563EB] animate-pulse" />
                       BLEVON Redesign / After
                     </span>
-                    <span className="text-xs text-[#2563EB] font-mono font-semibold">kavuturudental.com</span>
+                    <span className="text-xs text-[#2563EB] font-mono font-semibold">kavuturudentalclinic.com</span>
                   </div>
 
-                  <div className="overflow-hidden rounded-xl sm:rounded-2xl border border-blue-200 bg-white shadow-md">
-                    <div className="flex h-7 items-center justify-between border-b border-[#E4E7EC] bg-[#F8F9FA] px-3">
-                      <div className="flex items-center gap-1.5">
-                        <div className="size-2 rounded-full bg-[#FF5F56]" />
-                        <div className="size-2 rounded-full bg-[#FFBD2E]" />
-                        <div className="size-2 rounded-full bg-[#27C93F]" />
+                  <div className="overflow-hidden rounded-xl border border-blue-200 bg-white shadow-sm">
+                    <div className="flex h-6 items-center justify-between border-b border-[#E4E7EC] bg-[#F8F9FA] px-2.5">
+                      <div className="flex items-center gap-1">
+                        <div className="size-1.5 rounded-full bg-[#FF5F56]" />
+                        <div className="size-1.5 rounded-full bg-[#FFBD2E]" />
+                        <div className="size-1.5 rounded-full bg-[#27C93F]" />
                       </div>
-                      <span className="text-[10px] text-[#2563EB] font-medium font-mono">kavuturudental.com</span>
-                      <div className="w-6" />
+                      <span className="text-[9px] text-[#2563EB] font-medium font-mono">kavuturudentalclinic.com</span>
+                      <div className="w-5" />
                     </div>
-                    <img
-                      src={kavuturuDesktopImg}
-                      alt="Kavuturu Dental Clinic BLEVON redesign (After)"
-                      className="w-full object-cover"
-                      loading="lazy"
-                    />
+                    <div className="w-full bg-white p-2 sm:p-3 flex items-center justify-center">
+                      <img
+                        src={kavuturuDesktopImg}
+                        alt="Kavuturu Dental Clinic BLEVON redesign (After)"
+                        className="w-full h-auto max-h-[360px] sm:max-h-[400px] object-contain rounded-md shadow-2xs block"
+                        loading="lazy"
+                      />
+                    </div>
                   </div>
                 </div>
 
-                <div className="mt-6 border-t border-blue-50 pt-4">
-                  <h4 className="text-base font-bold text-[#0E2A6D]">BLEVON Upgrades:</h4>
-                  <ul className="mt-2 space-y-1.5 text-sm text-[#475467]">
+                <div className="mt-4 border-t border-blue-50 pt-3">
+                  <h4 className="text-sm font-bold text-[#0E2A6D]">BLEVON Upgrades:</h4>
+                  <ul className="mt-1.5 space-y-1 text-xs text-[#475467]">
                     <li>• Modernized clinical UI with fluid responsive layouts</li>
                     <li>• Dynamic CMS dashboard for independent clinic updates</li>
                     <li>• Engineered technical SEO & structured schema foundation</li>
@@ -591,34 +595,34 @@ export default function CaseStudyPage() {
         {/* ============================================================ */}
         {/* 6. CMS / DYNAMIC MANAGEMENT                                  */}
         {/* ============================================================ */}
-        <section className="relative w-full border-t border-[#E4E7EC] bg-white py-20 md:py-28">
+        <section className="relative w-full border-t border-[#E4E7EC] bg-white py-10 sm:py-12 md:py-14">
           <div className="global-container">
-            <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16 items-center">
-              <div>
-                <span className="mb-3 inline-block text-xs font-semibold tracking-[0.24em] text-[#2563EB] uppercase sm:text-sm">
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-10 items-center">
+              <div className="lg:col-span-6">
+                <span className="mb-1.5 inline-block text-[11px] font-semibold tracking-[0.2em] text-[#2563EB] uppercase">
                   CONTENT MANAGEMENT
                 </span>
-                <h2 className="text-3xl font-bold tracking-tight text-[#101828] sm:text-4xl md:text-5xl leading-[1.15]">
+                <h2 className="text-xl font-bold tracking-tight text-[#101828] sm:text-2xl md:text-3xl lg:text-[32px] leading-[1.18]">
                   Built to be managed.
                 </h2>
-                <p className="mt-6 text-base text-[#667085] sm:text-lg leading-relaxed">
+                <p className="mt-3 text-xs text-[#667085] sm:text-sm md:text-[14.5px] leading-relaxed">
                   The website includes a dynamic management system that allows
                   authorized clinic staff to maintain and update important website
                   information without depending on a developer for routine content changes.
                 </p>
 
-                <div className="mt-8">
-                  <span className="text-xs font-bold tracking-wider text-[#101828] uppercase">
+                <div className="mt-5">
+                  <span className="text-[11px] font-bold tracking-wider text-[#101828] uppercase">
                     The CMS can manage:
                   </span>
-                  <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                  <div className="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {cmsCapabilities.map((cap) => (
                       <div
                         key={cap}
-                        className="flex items-center gap-2 rounded-xl border border-[#E4E7EC] bg-[#F7F8F6] px-3.5 py-2.5 text-sm font-medium text-[#101828]"
+                        className="flex items-center gap-2 rounded-lg border border-[#E4E7EC] bg-[#F7F8F6] px-3 py-1.5 text-xs sm:text-[13px] font-medium text-[#101828]"
                       >
-                        <span className="text-[#2563EB]">✓</span>
-                        {cap}
+                        <span className="text-[#2563EB] font-bold">✓</span>
+                        <span>{cap}</span>
                       </div>
                     ))}
                   </div>
@@ -626,21 +630,21 @@ export default function CaseStudyPage() {
               </div>
 
               {/* Authentic CMS Dashboard Screenshot Frame */}
-              <div className="overflow-hidden rounded-2xl sm:rounded-3xl border border-[#E4E7EC] bg-white shadow-md">
-                <div className="flex h-7 sm:h-8 items-center justify-between border-b border-[#E4E7EC] bg-[#F8F9FA] px-3 sm:px-4">
+              <div className="lg:col-span-6 overflow-hidden rounded-xl border border-[#E4E7EC] bg-white shadow-2xs">
+                <div className="flex h-7 items-center justify-between border-b border-[#E4E7EC] bg-[#F8F9FA] px-3">
                   <div className="flex items-center gap-1.5">
                     <div className="size-2 rounded-full bg-[#FF5F56]" />
                     <div className="size-2 rounded-full bg-[#FFBD2E]" />
                     <div className="size-2 rounded-full bg-[#27C93F]" />
                   </div>
-                  <span className="text-[10px] sm:text-xs font-mono font-medium text-[#667085]">kavuturudental.com/admin</span>
+                  <span className="text-[10px] sm:text-xs font-mono font-medium text-[#667085]">kavuturudentalclinic.com/admin</span>
                   <div className="w-8" />
                 </div>
-                <div className="relative w-full overflow-hidden bg-white">
+                <div className="relative w-full overflow-hidden bg-white p-2 sm:p-3 flex items-center justify-center">
                   <img
                     src={kavuturuCmsDashboardImg}
                     alt="Kavuturu Dental Clinic CMS Admin Dashboard"
-                    className="w-full object-cover"
+                    className="w-full h-auto max-h-[420px] sm:max-h-[460px] object-contain rounded-md shadow-2xs block"
                     loading="lazy"
                   />
                 </div>
@@ -652,36 +656,36 @@ export default function CaseStudyPage() {
         {/* ============================================================ */}
         {/* 7. TECHNOLOGY                                                */}
         {/* ============================================================ */}
-        <section className="relative w-full border-t border-[#E4E7EC] py-20 md:py-28">
+        <section className="relative w-full border-t border-[#E4E7EC] py-10 sm:py-12 md:py-14">
           <div className="global-container">
-            <div className="mb-14 max-w-3xl sm:mb-18">
-              <span className="mb-3 inline-block text-xs font-semibold tracking-[0.24em] text-[#2563EB] uppercase sm:text-sm">
+            <div className="mb-6 max-w-2xl sm:mb-8">
+              <span className="mb-1.5 inline-block text-[11px] font-semibold tracking-[0.2em] text-[#2563EB] uppercase">
                 TECHNOLOGY
               </span>
-              <h2 className="text-3xl font-bold tracking-tight text-[#101828] sm:text-4xl md:text-5xl leading-[1.15]">
+              <h2 className="text-xl font-bold tracking-tight text-[#101828] sm:text-2xl md:text-3xl lg:text-[32px] leading-[1.18]">
                 Tools used to build the platform.
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {techGroups.map((group) => (
                 <div
                   key={group.category}
-                  className="rounded-2xl sm:rounded-3xl border border-[#E4E7EC] bg-white p-6 sm:p-7 shadow-xs"
+                  className="rounded-xl border border-[#E4E7EC] bg-white p-4 sm:p-5 shadow-2xs"
                 >
-                  <h3 className="text-sm font-bold tracking-wider text-[#2563EB] uppercase">
+                  <h3 className="text-xs font-bold tracking-wider text-[#2563EB] uppercase">
                     {group.category}
                   </h3>
-                  <div className="mt-5 grid grid-cols-2 gap-3">
+                  <div className="mt-3.5 grid grid-cols-2 gap-2">
                     {group.items.map((tech) => (
                       <div
                         key={tech.name}
-                        className="flex items-center gap-2.5 rounded-xl border border-[#E4E7EC] bg-[#F7F8F6] p-3 transition-colors duration-200 hover:bg-white hover:border-blue-300"
+                        className="flex items-center gap-2 rounded-lg border border-[#E4E7EC] bg-[#F7F8F6] p-2 transition-colors duration-200 hover:bg-white hover:border-blue-300"
                       >
-                        <div className="size-6 shrink-0 flex items-center justify-center">
+                        <div className="size-4.5 shrink-0 flex items-center justify-center">
                           {tech.icon}
                         </div>
-                        <span className="text-sm font-semibold text-[#101828]">
+                        <span className="text-[11.5px] font-semibold text-[#101828]">
                           {tech.name}
                         </span>
                       </div>
@@ -696,30 +700,30 @@ export default function CaseStudyPage() {
         {/* ============================================================ */}
         {/* 8. HOW WE APPROACHED IT                                      */}
         {/* ============================================================ */}
-        <section className="relative w-full border-t border-[#E4E7EC] bg-white py-20 md:py-28">
+        <section className="relative w-full border-t border-[#E4E7EC] bg-white py-10 sm:py-12 md:py-14">
           <div className="global-container">
-            <div className="mb-14 max-w-3xl sm:mb-18">
-              <span className="mb-3 inline-block text-xs font-semibold tracking-[0.24em] text-[#2563EB] uppercase sm:text-sm">
+            <div className="mb-6 max-w-2xl sm:mb-8">
+              <span className="mb-1.5 inline-block text-[11px] font-semibold tracking-[0.2em] text-[#2563EB] uppercase">
                 APPROACH
               </span>
-              <h2 className="text-3xl font-bold tracking-tight text-[#101828] sm:text-4xl md:text-5xl leading-[1.15]">
+              <h2 className="text-xl font-bold tracking-tight text-[#101828] sm:text-2xl md:text-3xl lg:text-[32px] leading-[1.18]">
                 Understand → Redesign → Optimize → Enable
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {approachSteps.map((step) => (
                 <div
                   key={step.num}
-                  className="flex flex-col justify-start rounded-2xl border border-[#E4E7EC] bg-[#F7F8F6] p-6 sm:p-7 shadow-2xs transition-all duration-300 hover:border-blue-300 hover:bg-white hover:shadow-sm"
+                  className="flex flex-col justify-start rounded-xl border border-[#E4E7EC] bg-[#F7F8F6] p-4 sm:p-5 shadow-2xs transition-all duration-300 hover:border-blue-300 hover:bg-white hover:shadow-xs"
                 >
-                  <span className="font-mono text-sm font-bold tracking-wider text-[#2563EB]">
+                  <span className="font-mono text-xs font-bold tracking-wider text-[#2563EB]">
                     {step.num}
                   </span>
-                  <h3 className="mt-3 text-xl font-bold text-[#101828]">
+                  <h3 className="mt-1.5 text-base font-bold text-[#101828] sm:text-lg">
                     {step.title}
                   </h3>
-                  <p className="mt-3 text-sm text-[#667085] leading-relaxed">
+                  <p className="mt-1.5 text-xs text-[#667085] leading-relaxed sm:text-[13px]">
                     {step.desc}
                   </p>
                 </div>
@@ -731,23 +735,23 @@ export default function CaseStudyPage() {
         {/* ============================================================ */}
         {/* 9. FINAL OUTCOME                                             */}
         {/* ============================================================ */}
-        <section className="relative w-full border-t border-[#E4E7EC] py-20 md:py-28">
+        <section className="relative w-full border-t border-[#E4E7EC] py-10 sm:py-12 md:py-14">
           <div className="global-container">
-            <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_1.5fr] lg:gap-16 items-start">
-              <div>
-                <span className="mb-3 inline-block text-xs font-semibold tracking-[0.24em] text-[#2563EB] uppercase sm:text-sm">
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-12 lg:gap-10 items-start">
+              <div className="lg:col-span-5">
+                <span className="mb-1.5 inline-block text-[11px] font-semibold tracking-[0.2em] text-[#2563EB] uppercase">
                   OUTCOME
                 </span>
-                <h2 className="text-3xl font-bold tracking-tight text-[#101828] sm:text-4xl md:text-5xl leading-[1.15]">
+                <h2 className="text-xl font-bold tracking-tight text-[#101828] sm:text-2xl md:text-3xl lg:text-[32px] leading-[1.18]">
                   More than a redesign.
                 </h2>
               </div>
 
-              <div className="space-y-6 text-lg text-[#667085] sm:text-xl leading-relaxed">
+              <div className="lg:col-span-7 space-y-3 text-xs text-[#667085] sm:text-sm md:text-[14.5px] leading-relaxed">
                 <p>
                   The result is a modernized digital platform for Kavuturu Dental Clinic that combines:
                 </p>
-                <div className="rounded-2xl border border-blue-200 bg-[#EAF1FF]/60 p-6 text-base sm:text-lg font-semibold text-[#0E2A6D]">
+                <div className="rounded-xl border border-blue-200 bg-[#EAF1FF]/60 p-3.5 text-xs sm:text-sm font-semibold text-[#0E2A6D]">
                   A redesigned website + stronger SEO foundation + dynamic content management
                 </div>
                 <p>
@@ -762,103 +766,103 @@ export default function CaseStudyPage() {
         {/* ============================================================ */}
         {/* 10. PROJECT INVESTMENT & PROJECT RECORD                      */}
         {/* ============================================================ */}
-        <section className="relative w-full border-t border-[#E4E7EC] bg-white py-20 md:py-28">
+        <section className="relative w-full border-t border-[#E4E7EC] bg-white py-10 sm:py-12 md:py-14">
           <div className="global-container">
-            <div className="mb-12 max-w-3xl sm:mb-16">
-              <span className="mb-3 inline-block text-xs font-semibold tracking-[0.24em] text-[#2563EB] uppercase sm:text-sm">
+            <div className="mb-6 max-w-2xl sm:mb-8">
+              <span className="mb-1.5 inline-block text-[11px] font-semibold tracking-[0.2em] text-[#2563EB] uppercase">
                 PROJECT RECORD
               </span>
-              <h2 className="text-3xl font-bold tracking-tight text-[#101828] sm:text-4xl md:text-5xl leading-[1.15]">
+              <h2 className="text-xl font-bold tracking-tight text-[#101828] sm:text-2xl md:text-3xl lg:text-[32px] leading-[1.18]">
                 Project Investment & Documentation
               </h2>
-              <div className="mt-4 flex items-center gap-2 text-base sm:text-lg text-[#667085]">
+              <div className="mt-2 flex items-center gap-2 text-xs sm:text-sm text-[#667085]">
                 <span>Project Period:</span>
                 <span className="font-semibold text-[#101828]">June 2026 — July 2026</span>
               </div>
             </div>
 
             {/* Project Investment Editorial Information Panel */}
-            <div className="mb-14 rounded-2xl sm:rounded-3xl border border-[#E4E7EC] bg-[#F7F8F6] p-6 sm:p-8 lg:p-10 max-w-3xl">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10 border-b border-[#E4E7EC] pb-6 sm:pb-8">
+            <div className="mb-8 rounded-xl border border-[#E4E7EC] bg-[#F7F8F6] p-4 sm:p-6 max-w-2xl">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 border-b border-[#E4E7EC] pb-4 sm:pb-5">
                 <div>
-                  <span className="text-xs font-bold tracking-[0.16em] text-[#667085] uppercase">
+                  <span className="text-[11px] font-bold tracking-[0.16em] text-[#667085] uppercase">
                     Standard Project Value
                   </span>
-                  <div className="mt-2 text-3xl sm:text-4xl font-bold tracking-tight text-[#101828]">
-                    $500 <span className="text-base sm:text-lg font-medium text-[#667085]">USD</span>
+                  <div className="mt-1 text-2xl sm:text-3xl font-bold tracking-tight text-[#101828]">
+                    $500 <span className="text-xs sm:text-sm font-medium text-[#667085]">USD</span>
                   </div>
                 </div>
 
                 <div>
-                  <span className="text-xs font-bold tracking-[0.16em] text-[#2563EB] uppercase">
+                  <span className="text-[11px] font-bold tracking-[0.16em] text-[#2563EB] uppercase">
                     First Client Special Price
                   </span>
-                  <div className="mt-2 text-3xl sm:text-4xl font-bold tracking-tight text-[#2563EB]">
-                    ₹8,000 <span className="text-base sm:text-lg font-medium text-[#2563EB]/80">INR</span>
+                  <div className="mt-1 text-2xl sm:text-3xl font-bold tracking-tight text-[#2563EB]">
+                    ₹8,000 <span className="text-xs sm:text-sm font-medium text-[#2563EB]/80">INR</span>
                   </div>
                 </div>
               </div>
 
-              <p className="mt-5 text-sm text-[#667085] sm:text-base leading-relaxed">
+              <p className="mt-3 text-xs text-[#667085] leading-relaxed">
                 Special introductory pricing provided for BLEVON's first client.
               </p>
             </div>
 
             {/* 2-Column Split: Payment Screenshots Left, Currency Math Breakdown Right (Equal Height) */}
-            <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 items-stretch">
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-12 items-stretch">
               
               {/* Left Column (5 Cols): Payment Evidence Screenshots */}
               <div className="lg:col-span-5 flex flex-col h-full">
-                <span className="text-xs font-bold tracking-wider text-[#667085] uppercase mb-3">
+                <span className="text-[11px] font-bold tracking-wider text-[#667085] uppercase mb-2">
                   Verified Payment Receipts
                 </span>
 
-                <div className="flex-1 overflow-hidden rounded-2xl sm:rounded-3xl border border-[#E4E7EC] bg-[#F7F8F6] p-5 sm:p-6 shadow-xs flex flex-col justify-between">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 flex-1">
+                <div className="flex-1 overflow-hidden rounded-xl border border-[#E4E7EC] bg-[#F7F8F6] p-3 sm:p-4 shadow-2xs flex flex-col justify-between">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 flex-1">
                     {/* Payment Receipt 1 */}
-                    <div className="overflow-hidden rounded-xl sm:rounded-2xl border border-[#E4E7EC] bg-white p-2.5 shadow-2xs flex flex-col justify-between transition-all duration-300 hover:border-blue-300 hover:shadow-xs">
-                      <div className="mb-2 flex items-center justify-between px-1">
-                        <span className="text-[10px] font-bold tracking-wider text-[#101828] uppercase">
+                    <div className="overflow-hidden rounded-lg border border-[#E4E7EC] bg-white p-2 shadow-2xs flex flex-col justify-between transition-all duration-300 hover:border-blue-300 hover:shadow-xs">
+                      <div className="mb-1.5 flex items-center justify-between px-0.5">
+                        <span className="text-[9px] font-bold tracking-wider text-[#101828] uppercase">
                           Milestone 01
                         </span>
-                        <span className="inline-flex items-center gap-1 rounded-full border border-emerald-200 bg-emerald-50 px-2 py-0.5 text-[9px] font-semibold text-emerald-700">
-                          <span className="size-1.5 rounded-full bg-emerald-500" />
+                        <span className="inline-flex items-center gap-1 rounded-full border border-emerald-200 bg-emerald-50 px-1.5 py-0.5 text-[9px] font-semibold text-emerald-700">
+                          <span className="size-1 rounded-full bg-emerald-500" />
                           ₹5,500
                         </span>
                       </div>
-                      <div className="overflow-hidden rounded-lg border border-[#F2F4F7] bg-white flex-1 flex items-center justify-center">
+                      <div className="overflow-hidden rounded-md border border-[#F2F4F7] bg-[#FAFAFA] flex-1 flex items-center justify-center p-1 min-h-[200px] sm:min-h-[240px]">
                         <img
                           src={kavuturuPayment1}
                           alt="Kavuturu Dental Clinic Project Payment Documentation 1"
-                          className="size-full object-contain max-h-[380px]"
+                          className="w-full h-auto max-h-[320px] sm:max-h-[360px] object-contain block"
                           loading="lazy"
                         />
                       </div>
                     </div>
 
                     {/* Payment Receipt 2 */}
-                    <div className="overflow-hidden rounded-xl sm:rounded-2xl border border-[#E4E7EC] bg-white p-2.5 shadow-2xs flex flex-col justify-between transition-all duration-300 hover:border-blue-300 hover:shadow-xs">
-                      <div className="mb-2 flex items-center justify-between px-1">
-                        <span className="text-[10px] font-bold tracking-wider text-[#101828] uppercase">
+                    <div className="overflow-hidden rounded-lg border border-[#E4E7EC] bg-white p-2 shadow-2xs flex flex-col justify-between transition-all duration-300 hover:border-blue-300 hover:shadow-xs">
+                      <div className="mb-1.5 flex items-center justify-between px-0.5">
+                        <span className="text-[9px] font-bold tracking-wider text-[#101828] uppercase">
                           Milestone 02
                         </span>
-                        <span className="inline-flex items-center gap-1 rounded-full border border-emerald-200 bg-emerald-50 px-2 py-0.5 text-[9px] font-semibold text-emerald-700">
-                          <span className="size-1.5 rounded-full bg-emerald-500" />
+                        <span className="inline-flex items-center gap-1 rounded-full border border-emerald-200 bg-emerald-50 px-1.5 py-0.5 text-[9px] font-semibold text-emerald-700">
+                          <span className="size-1 rounded-full bg-emerald-500" />
                           ₹2,500
                         </span>
                       </div>
-                      <div className="overflow-hidden rounded-lg border border-[#F2F4F7] bg-white flex-1 flex items-center justify-center">
+                      <div className="overflow-hidden rounded-md border border-[#F2F4F7] bg-[#FAFAFA] flex-1 flex items-center justify-center p-1 min-h-[200px] sm:min-h-[240px]">
                         <img
                           src={kavuturuPayment2}
                           alt="Kavuturu Dental Clinic Project Payment Documentation 2"
-                          className="size-full object-contain max-h-[380px]"
+                          className="w-full h-auto max-h-[320px] sm:max-h-[360px] object-contain block"
                           loading="lazy"
                         />
                       </div>
                     </div>
                   </div>
 
-                  <div className="mt-4 border-t border-[#E4E7EC] pt-3 text-center">
+                  <div className="mt-2.5 border-t border-[#E4E7EC] pt-2 text-center">
                     <span className="text-xs font-semibold text-[#101828]">
                       Total Paid: <span className="font-mono text-[#2563EB]">₹5,500 + ₹2,500 = ₹8,000 INR</span>
                     </span>
@@ -868,67 +872,67 @@ export default function CaseStudyPage() {
 
               {/* Right Column (7 Cols): Mathematical Currency Breakdown */}
               <div className="lg:col-span-7 flex flex-col h-full">
-                <span className="text-xs font-bold tracking-wider text-[#667085] uppercase mb-3">
+                <span className="text-[11px] font-bold tracking-wider text-[#667085] uppercase mb-2">
                   Investment Math & Global Currency Reference
                 </span>
 
-                <div className="flex-1 overflow-hidden rounded-2xl sm:rounded-3xl border border-[#E4E7EC] bg-[#F7F8F6] p-5 sm:p-6 shadow-xs flex flex-col justify-between">
+                <div className="flex-1 overflow-hidden rounded-xl border border-[#E4E7EC] bg-[#F7F8F6] p-3 sm:p-4 shadow-2xs flex flex-col justify-between">
                   {/* Total Math Calculation */}
-                  <div className="rounded-xl border border-blue-200 bg-white p-4 shadow-2xs">
-                    <div className="flex flex-wrap items-center justify-between gap-2 text-xs sm:text-sm text-[#667085]">
+                  <div className="rounded-lg border border-blue-200 bg-white p-3 shadow-2xs">
+                    <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-[#667085]">
                       <span>Milestone 01 (Design & Architecture):</span>
                       <span className="font-mono font-semibold text-[#101828]">₹5,500 INR</span>
                     </div>
-                    <div className="mt-1.5 flex flex-wrap items-center justify-between gap-2 text-xs sm:text-sm text-[#667085]">
+                    <div className="mt-1 flex flex-wrap items-center justify-between gap-2 text-xs text-[#667085]">
                       <span>Milestone 02 (Development, CMS & Launch):</span>
                       <span className="font-mono font-semibold text-[#101828]">₹2,500 INR</span>
                     </div>
-                    <div className="mt-2.5 flex flex-wrap items-center justify-between gap-2 border-t border-[#E4E7EC] pt-2.5 text-sm sm:text-base font-bold text-[#0E2A6D]">
+                    <div className="mt-1.5 flex flex-wrap items-center justify-between gap-2 border-t border-[#E4E7EC] pt-1.5 text-xs font-bold text-[#0E2A6D]">
                       <span>Total First Client Investment:</span>
                       <span className="font-mono text-[#2563EB]">₹8,000 INR</span>
                     </div>
                   </div>
 
                   {/* Multi-Currency Equivalence Table */}
-                  <div className="my-3">
-                    <h4 className="text-xs font-bold tracking-wider text-[#101828] uppercase mb-2">
+                  <div className="my-2">
+                    <h4 className="text-[11px] font-bold tracking-wider text-[#101828] uppercase mb-1">
                       Standard Value vs. First Client Rate (Major Currencies)
                     </h4>
 
-                    <div className="overflow-hidden rounded-xl border border-[#E4E7EC] bg-white text-xs">
-                      <div className="grid grid-cols-3 border-b border-[#E4E7EC] bg-[#F8F9FA] px-3.5 py-2 font-bold text-[#101828]">
+                    <div className="overflow-hidden rounded-lg border border-[#E4E7EC] bg-white text-[11px]">
+                      <div className="grid grid-cols-3 border-b border-[#E4E7EC] bg-[#F8F9FA] px-2.5 py-1.5 font-bold text-[#101828]">
                         <span>Currency</span>
                         <span>Standard Value</span>
                         <span className="text-[#2563EB]">First Client Price</span>
                       </div>
                       
                       <div className="divide-y divide-[#E4E7EC] text-[#475467]">
-                        <div className="grid grid-cols-3 px-3.5 py-2 items-center">
+                        <div className="grid grid-cols-3 px-2.5 py-1 items-center">
                           <span className="font-semibold text-[#101828]">USD ($)</span>
                           <span>$500 USD</span>
                           <span className="font-semibold text-[#2563EB]">~$95 USD</span>
                         </div>
-                        <div className="grid grid-cols-3 px-3.5 py-2 items-center">
+                        <div className="grid grid-cols-3 px-2.5 py-1 items-center">
                           <span className="font-semibold text-[#101828]">INR (₹)</span>
                           <span>₹42,000 INR</span>
                           <span className="font-bold text-[#2563EB]">₹8,000 INR</span>
                         </div>
-                        <div className="grid grid-cols-3 px-3.5 py-2 items-center">
+                        <div className="grid grid-cols-3 px-2.5 py-1 items-center">
                           <span className="font-semibold text-[#101828]">EUR (€)</span>
                           <span>€460 EUR</span>
                           <span className="font-semibold text-[#2563EB]">~€88 EUR</span>
                         </div>
-                        <div className="grid grid-cols-3 px-3.5 py-2 items-center">
+                        <div className="grid grid-cols-3 px-2.5 py-1 items-center">
                           <span className="font-semibold text-[#101828]">GBP (£)</span>
                           <span>£395 GBP</span>
                           <span className="font-semibold text-[#2563EB]">~£75 GBP</span>
                         </div>
-                        <div className="grid grid-cols-3 px-3.5 py-2 items-center">
+                        <div className="grid grid-cols-3 px-2.5 py-1 items-center">
                           <span className="font-semibold text-[#101828]">AED (د.إ)</span>
                           <span>1,835 AED</span>
                           <span className="font-semibold text-[#2563EB]">~350 AED</span>
                         </div>
-                        <div className="grid grid-cols-3 px-3.5 py-2 items-center">
+                        <div className="grid grid-cols-3 px-2.5 py-1 items-center">
                           <span className="font-semibold text-[#101828]">AUD ($)</span>
                           <span>$760 AUD</span>
                           <span className="font-semibold text-[#2563EB]">~$145 AUD</span>
@@ -937,7 +941,7 @@ export default function CaseStudyPage() {
                     </div>
                   </div>
 
-                  <p className="text-[10px] sm:text-[11px] text-[#667085] leading-relaxed">
+                  <p className="text-[8.5px] sm:text-[9.5px] text-[#667085] leading-relaxed">
                     * Currency conversions are indexed to standard studio baseline rates ($500 USD reference value) to illustrate the introductory benefit provided for BLEVON's inaugural client.
                   </p>
                 </div>
@@ -950,25 +954,25 @@ export default function CaseStudyPage() {
         {/* ============================================================ */}
         {/* 11. CLIENT IDENTITY SUMMARY BLOCK                            */}
         {/* ============================================================ */}
-        <section className="relative w-full border-t border-[#E4E7EC] py-16 md:py-20">
+        <section className="relative w-full border-t border-[#E4E7EC] py-10 sm:py-12 md:py-14">
           <div className="global-container">
-            <div className="rounded-3xl border border-[#E4E7EC] bg-white p-8 sm:p-12 lg:p-14 flex flex-col sm:flex-row items-center justify-between gap-8 shadow-xs">
-              <div className="flex items-center gap-6">
-                <div className="flex size-20 sm:size-24 shrink-0 items-center justify-center rounded-2xl border border-[#E4E7EC] bg-[#F7F8F6] p-3">
+            <div className="rounded-xl border border-[#E4E7EC] bg-white p-4 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-2xs">
+              <div className="flex items-center gap-3.5 sm:gap-4">
+                <div className="flex size-13 sm:size-15 shrink-0 items-center justify-center rounded-lg border border-[#E4E7EC] bg-[#F7F8F6] p-2">
                   <img
                     src={kavuturuLogo}
                     alt="Kavuturu Dental Clinic Logo"
-                    className="max-h-12 w-auto object-contain"
+                    className="max-h-7 sm:max-h-8 max-w-full h-auto w-auto object-contain"
                   />
                 </div>
                 <div>
-                  <span className="text-xs font-bold tracking-[0.2em] text-[#2563EB] uppercase">
+                  <span className="text-[10.5px] font-bold tracking-[0.2em] text-[#2563EB] uppercase">
                     CLIENT
                   </span>
-                  <h3 className="text-xl font-bold text-[#101828] sm:text-2xl">
+                  <h3 className="text-base font-bold text-[#101828] sm:text-lg">
                     Kavuturu Dental Clinic
                   </h3>
-                  <span className="text-sm text-[#667085]">
+                  <span className="text-xs text-[#667085]">
                     Dental Healthcare & Advanced Implant Center
                   </span>
                 </div>
@@ -976,12 +980,12 @@ export default function CaseStudyPage() {
 
               <div className="flex items-center gap-3">
                 <a
-                  href="https://www.kavuturudentalclinic.com/?utm_source=chatgpt.com"
+                  href="https://www.kavuturudentalclinic.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 rounded-full border border-blue-200 bg-[#EAF1FF] px-5 py-2.5 text-xs sm:text-sm font-semibold text-[#2563EB] transition-all duration-300 hover:bg-[#2563EB] hover:text-white"
+                  className="group inline-flex items-center gap-1.5 rounded-full border border-blue-200 bg-[#EAF1FF] px-3.5 py-1.5 text-xs font-semibold text-[#2563EB] transition-all duration-300 hover:bg-[#2563EB] hover:text-white"
                 >
-                  <span className="size-2 rounded-full bg-[#2563EB] group-hover:bg-white animate-pulse" />
+                  <span className="size-1.5 rounded-full bg-[#2563EB] group-hover:bg-white animate-pulse" />
                   <span>View Live Website</span>
                   <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
                 </a>
@@ -993,36 +997,36 @@ export default function CaseStudyPage() {
         {/* ============================================================ */}
         {/* 12. NAVIGATION & NEXT STEPS (Final CTA)                      */}
         {/* ============================================================ */}
-        <section className="relative w-full border-t border-[#E4E7EC] bg-gradient-to-b from-[#F7F8F6] to-[#EAF1FF]/70 py-20 text-center md:py-28">
+        <section className="relative w-full border-t border-[#E4E7EC] bg-gradient-to-b from-[#F7F8F6] to-[#EAF1FF]/70 py-10 text-center sm:py-14 md:py-16">
           <div className="global-container">
-            <div className="mx-auto max-w-3xl">
-              <span className="mb-3 inline-block text-sm font-semibold tracking-[0.24em] text-[#2563EB] uppercase sm:text-base">
+            <div className="mx-auto max-w-xl">
+              <span className="mb-1.5 inline-block text-[11px] font-semibold tracking-[0.2em] text-[#2563EB] uppercase">
                 MORE PROJECTS
               </span>
-              <h2 className="mb-4 text-4xl font-bold tracking-tight text-[#101828] sm:text-5xl md:text-6xl leading-[1.12]">
+              <h2 className="mb-2.5 text-xl font-bold tracking-tight text-[#101828] sm:text-2xl md:text-3xl lg:text-[34px] leading-[1.15]">
                 Looking to build or redesign something similar?
               </h2>
-              <p className="mx-auto mb-10 max-w-2xl text-lg text-[#667085] sm:text-xl lg:text-2xl leading-relaxed">
+              <p className="mx-auto mb-5 max-w-md text-xs text-[#667085] sm:text-sm leading-relaxed">
                 We design and develop modern websites and mobile applications tailored
                 to your business goals.
               </p>
-              <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-5">
+              <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
                 <a
                   href="/contact"
-                  className="group inline-flex h-16 items-center justify-center gap-3 rounded-full bg-[#2563EB] px-10 text-lg font-semibold text-white shadow-[0_4px_16px_rgba(37,99,235,0.28)] transition-all duration-300 hover:bg-blue-700 hover:shadow-[0_8px_24px_rgba(37,99,235,0.4)] hover:scale-[1.02] active:scale-[0.98] sm:text-xl"
+                  className="group inline-flex h-10 sm:h-11 items-center justify-center gap-2 rounded-full bg-[#2563EB] px-6 text-xs sm:text-sm font-semibold text-white shadow-[0_4px_14px_rgba(37,99,235,0.25)] transition-all duration-300 hover:bg-blue-700 hover:shadow-[0_6px_20px_rgba(37,99,235,0.35)] active:scale-[0.98]"
                 >
                   <span>Start a Project</span>
-                  <span className="transition-transform duration-300 group-hover:translate-x-1.5">
+                  <span className="transition-transform duration-300 group-hover:translate-x-1">
                     →
                   </span>
                 </a>
 
                 <a
                   href="/work"
-                  className="group inline-flex h-16 items-center justify-center gap-3 rounded-full border border-[#D0D5DD] bg-white px-10 text-lg font-semibold text-[#0E2A6D] shadow-xs backdrop-blur-md transition-all duration-300 hover:border-blue-300 hover:bg-[#EAF1FF] hover:text-[#2563EB] hover:scale-[1.02] active:scale-[0.98] sm:text-xl"
+                  className="group inline-flex h-10 sm:h-11 items-center justify-center gap-2 rounded-full border border-[#D0D5DD] bg-white px-6 text-xs sm:text-sm font-semibold text-[#0E2A6D] shadow-2xs transition-all duration-300 hover:border-blue-300 hover:bg-[#EAF1FF] hover:text-[#2563EB] active:scale-[0.98]"
                 >
                   <span>View All Work</span>
-                  <span className="text-[#2563EB] transition-transform duration-300 group-hover:translate-x-1.5">
+                  <span className="text-[#2563EB] transition-transform duration-300 group-hover:translate-x-1">
                     →
                   </span>
                 </a>
