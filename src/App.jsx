@@ -8,6 +8,9 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import WebDevelopment from "./pages/Services/WebDevelopment";
 import AppDevelopment from "./pages/Services/AppDevelopment";
+import PrivacyPolicy from "./pages/Legal/PrivacyPolicy";
+import TermsAndConditions from "./pages/Legal/TermsAndConditions";
+import RefundPolicy from "./pages/Legal/RefundPolicy";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -29,6 +32,17 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/services/web-development" element={<WebDevelopment />} />
         <Route path="/services/app-development" element={<AppDevelopment />} />
+
+        {/* Legal Routes */}
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/refund-policy" element={<RefundPolicy />} />
+
+        {/* Legal Aliases */}
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<TermsAndConditions />} />
+        <Route path="/refund" element={<RefundPolicy />} />
+
         {/* Fallback to Home for unknown routes */}
         <Route path="*" element={<Home />} />
       </Routes>
